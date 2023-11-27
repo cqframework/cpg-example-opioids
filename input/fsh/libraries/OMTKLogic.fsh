@@ -1,6 +1,6 @@
 Instance: OMTKLogic
 InstanceOf: Library
-Usage: #example
+Usage: #definition
 Title: "OMTK Logic"
 * insert LibraryMetadata(OMTKLogic)
 * name = "OMTKLogic"
