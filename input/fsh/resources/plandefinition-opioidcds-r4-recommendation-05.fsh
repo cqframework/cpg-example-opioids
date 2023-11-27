@@ -1,6 +1,6 @@
 Instance: opioidcds-r4-recommendation-05
 InstanceOf: PlanDefinition
-Usage: #example
+Usage: #definition
 Title: "CDC Opioid Prescribing Guideline Recommendation #5"
 * insert DefinitionMetadata(PlanDefinition, opioidcds-r4-recommendation-05)
 * insert PlanDefinitionPurposeAndUsage

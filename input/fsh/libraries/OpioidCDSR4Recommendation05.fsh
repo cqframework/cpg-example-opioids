@@ -1,6 +1,6 @@
 Instance: OpioidCDSR4Recommendation05
 InstanceOf: Library
-Usage: #example
+Usage: #definition
 Title: "Opioid CDS R4 Logic for recommendation #5"
 * insert DefinitionMetadata(Library, OpioidCDSR4Recommendation05)
 * name = "OpioidCDSR4Recommendation05"

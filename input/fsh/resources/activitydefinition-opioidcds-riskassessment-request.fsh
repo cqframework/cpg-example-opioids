@@ -1,6 +1,6 @@
 Instance: opioidcds-riskassessment-request
 InstanceOf: ActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "CDC Opioid Prescribing Guideline Recommendation #7 - Risk Assessment ProcedureRequest"
 * insert DefinitionMetadata(ActivityDefinition, opioidcds-riskassessment-request)
 * insert ActivityDefinitionPurposeAndUsage

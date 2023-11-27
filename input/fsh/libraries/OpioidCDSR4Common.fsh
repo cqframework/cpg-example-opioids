@@ -1,6 +1,6 @@
 Instance: OpioidCDSR4Common
 InstanceOf: Library
-Usage: #example
+Usage: #definition
 Title: "Opioid CDS R4 Common Logic"
 * insert LibraryMetadata(OpioidCDSR4Common)
 * name = "OpioidCDSR4Common"
