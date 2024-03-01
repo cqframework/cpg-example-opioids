@@ -18,5 +18,8 @@ Alias: $recommendation-strength = http://terminology.hl7.org/CodeSystem/recommen
 Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm
 Alias: $sct = http://snomed.info/sct
 Alias: $usage-context-type = http://terminology.hl7.org/CodeSystem/usage-context-type
+Alias: $artifact-relatedArtifact = http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact
+Alias: $artifact-usageWarning = http://hl7.org/fhir/StructureDefinition/artifact-usageWarning
+
 
 

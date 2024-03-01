@@ -41,28 +41,25 @@ RuleSet: UseContext(coding, display)
   * valueCodeableConcept = {coding} "{display}"
 
 RuleSet: ValueSetMetadata
-* ^meta.profile[0] = Canonical(cpg-computablevalueset)
-* ^meta.profile[+] = Canonical(cpg-publishablevalueset)
-* ^meta.profile[+] = Canonical(cpg-executablevalueset)
-* ^extension[0].url = Canonical(cpg-knowledgeCapability)
+* ^extension[0].url = Canonical(cqf-knowledgeCapability)
 * ^extension[=].valueCode = #shareable
-* ^extension[+].url = Canonical(cpg-knowledgeCapability)
+* ^extension[+].url = Canonical(cqf-knowledgeCapability)
 * ^extension[=].valueCode = #computable
-* ^extension[+].url = Canonical(cpg-knowledgeCapability)
+* ^extension[+].url = Canonical(cqf-knowledgeCapability)
 * ^extension[=].valueCode = #executable
-* ^extension[+].url = Canonical(cpg-knowledgeCapability)
+* ^extension[+].url = Canonical(cqf-knowledgeCapability)
 * ^extension[=].valueCode = #publishable
-* ^extension[+].url = Canonical(cpg-knowledgeRepresentationLevel)
+* ^extension[+].url = Canonical(cqf-knowledgeRepresentationLevel)
 * ^extension[=].valueCode = #structured
-* ^extension[+].url = Canonical(cpg-knowledgeRepresentationLevel)
+* ^extension[+].url = Canonical(cqf-knowledgeRepresentationLevel)
 * ^extension[=].valueCode = #executable
 * ^extension[+].url = Canonical(valueset-author)
 * ^extension[=].valueContactDetail.name = "Robert McClure, MD, MPH"
 * ^extension[+].url = Canonical(valueset-sourceReference)
 * ^extension[=].valueUri = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3128404/"
-* ^extension[+].url = Canonical(cpg-usageWarning)
+* ^extension[+].url = $artifact-usageWarning
 * ^extension[=].valueString = "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
-* ^extension[+].url = Canonical(cpg-relatedArtifact)
+* ^extension[+].url = $artifact-relatedArtifact
 * ^extension[=].valueRelatedArtifact.type = #citation
 * ^extension[=].valueRelatedArtifact.citation = "Nelson SJ, Zeng K, Kilbourne J, Powell T, Moore R. Normalized names for clinical drugs: RxNorm at 6 years.<br/>J Am Med Inform Assoc. 2011 Jul-Aug;18(4)441-8. doi: 10.1136/amiajnl-2011-000116.<br/>Epub 2011 Apr 21. PubMed PMID: 21515544; PubMed Central PMCID: PMC3128404.<br/>[Full text](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3128404/)"
 //"TODO: The publisher errors on this with unknown language code 'text/x-apelon-tql'\n\t\t<extension url=\Canonical(valueset-expression\">\n\t\t\t<valueExpression>\n\t\t\t  <description value=\"Opioid medication)formulations (ingredient, OR ingredient+strength+form : RXNORM TTY=IN or SCD OR SBD) that are abuseable in ambulatory setting.\"/>\n\t\t\t\t<language value=\"text/x-apelon-tql\"/>\n\t\t\t\t<expression value=\"from [^RxNorm R^] with (INV ^Parent Of[MED-RT]^ equals &quot;Opioid Agonist [EPC][MED-RT]&quot; OR INV ^Parent Of[MED-RT]^ equals &quot;Opioid Agonist/Antagonist [EPC][MED-RT]&quot;) AND (^TTY[RxNorm R]^=&quot;IN&quot; OR ^TTY[RxNorm R]^=&quot;PIN&quot;) AND_NOT (^Code^= 480 OR ^Code^=73032 OR ^Code^=56795 OR ^Code^=477468) EXPORT ^RXCUI[RxNorm R]^, Concept_Name, ^TTY[RxNorm R]^;\"/>\n\t\t\t</valueExpression>\n\t\t</extension>"
