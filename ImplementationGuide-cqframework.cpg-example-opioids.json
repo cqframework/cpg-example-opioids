@@ -1,17 +1,17 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "hl7.fhir.uv.cpg.opioids",
+  "id" : "cqframework.cpg-example-opioids",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.uv.cpg.opioids</b></p><a name=\"hl7.fhir.uv.cpg.opioids\"> </a><a name=\"hchl7.fhir.uv.cpg.opioids\"> </a><a name=\"hl7.fhir.uv.cpg.opioids-en-US\"> </a><h2>CPGOpioidPrescribingGuidelineExamples</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/cpg/opioids/ImplementationGuide/hl7.fhir.uv.cpg.opioids</pre><div><p>Examples of CPG computable content representing CDC guidelines on prescribing opioids</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide cqframework.cpg-example-opioids</b></p><a name=\"cqframework.cpg-example-opioids\"> </a><a name=\"hccqframework.cpg-example-opioids\"> </a><a name=\"cqframework.cpg-example-opioids-en-US\"> </a><h2>CPGOpioidPrescribingGuidelineExamples</h2><p>The official URL for this implementation guide is: </p><pre>http://cqframework.org/cpg-example-opioids/ImplementationGuide/cqframework.cpg-example-opioids</pre><div><p>Examples of CPG computable content representing CDC guidelines on prescribing opioids</p>\n</div></div>"
   },
-  "url" : "http://hl7.org/fhir/uv/cpg/opioids/ImplementationGuide/hl7.fhir.uv.cpg.opioids",
+  "url" : "http://cqframework.org/cpg-example-opioids/ImplementationGuide/cqframework.cpg-example-opioids",
   "version" : "1.0.0",
   "name" : "CPGOpioidPrescribingGuidelineExamples",
   "title" : "CPG Opioid Prescribing Guideline Examples",
   "status" : "active",
   "experimental" : true,
-  "date" : "2024-11-18T18:03:39+00:00",
+  "date" : "2024-11-18T18:13:28+00:00",
   "publisher" : "HL7 International - Clinical Decision Support WG",
   "contact" : [{
     "name" : "HL7 International - Clinical Decision Support WG",
@@ -28,7 +28,7 @@
       "display" : "World"
     }]
   }],
-  "packageId" : "hl7.fhir.uv.cpg.opioids",
+  "packageId" : "cqframework.cpg-example-opioids",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
@@ -160,17 +160,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://hl7.org/fhir/uv/cpg/opioids/history.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueString" : "autoload-resources"
       },
       {
@@ -242,6 +231,17 @@
       {
         "url" : "value",
         "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://cqframework.org/cpg-example-opioids/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -450,17 +450,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://hl7.org/fhir/uv/cpg/opioids/history.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueCode" : "autoload-resources"
       },
       {
@@ -532,6 +521,17 @@
       {
         "url" : "value",
         "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://cqframework.org/cpg-example-opioids/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

@@ -1,6 +1,6 @@
 {
   "version" : "1.0.0",
-  "date" : "20241118180235",
+  "date" : "20241118181221",
   "notForPublication" : true,
-  "name" : "hl7.fhir.uv.cpg.opioids.r4"
+  "name" : "cqframework.cpg-example-opioids.r4"
 }

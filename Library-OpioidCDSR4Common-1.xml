@@ -12,7 +12,7 @@
    <annotation message="The function FHIRHelpers.ToString has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
    <annotation message="The function FHIRHelpers.ToString has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
    <annotation message="The function FHIRHelpers.ToString has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
-   <annotation librarySystem="http://hl7.org/fhir/uv/cpg/opioids" libraryId="OpioidCDSR4Common" libraryVersion="0.1.0" startLine="74" startChar="7" endLine="74" endChar="53" message="Could not resolve membership operator for terminology target of the retrieve." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
+   <annotation librarySystem="http://cqframework.org/cpg-example-opioids" libraryId="OpioidCDSR4Common" libraryVersion="0.1.0" startLine="74" startChar="7" endLine="74" endChar="53" message="Could not resolve membership operator for terminology target of the retrieve." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
    <annotation message="The function FHIRHelpers.ToString has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
    <annotation message="The function FHIRHelpers.ToString has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
    <annotation message="The function FHIRHelpers.ToString has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
@@ -25,7 +25,7 @@
          <a:s>library OpioidCDSR4Common version '0.1.0'</a:s>
       </a:s>
    </annotation>
-   <identifier id="OpioidCDSR4Common" system="http://hl7.org/fhir/uv/cpg/opioids" version="0.1.0"/>
+   <identifier id="OpioidCDSR4Common" system="http://cqframework.org/cpg-example-opioids" version="0.1.0"/>
    <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
    <usings>
       <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
@@ -53,7 +53,7 @@
             </a:s>
          </annotation>
       </def>
-      <def localId="3" locator="6:1-6:50" localIdentifier="OMTKLogic" path="http://hl7.org/fhir/uv/cpg/opioids/OMTKLogic" version="0.0.0">
+      <def localId="3" locator="6:1-6:50" localIdentifier="OMTKLogic" path="http://cqframework.org/cpg-example-opioids/OMTKLogic" version="0.0.0">
          <annotation xsi:type="a:Annotation">
             <a:s r="3">
                <a:s>include </a:s>

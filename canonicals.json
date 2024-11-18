@@ -2,49 +2,49 @@
   {
     "id" : "opioidcds-riskassessment-request",
     "type" : "ActivityDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/opiods/ActivityDefinition/opioidcds-riskassessment-request",
+    "url" : "http://cqframework.org/cpg-example-opioids/ActivityDefinition/opioidcds-riskassessment-request",
     "version" : "1.0.0",
     "name" : "OpioidCDS_RiskAssessment_Request"
   },
   {
+    "id" : "cqframework.cpg-example-opioids",
+    "type" : "ImplementationGuide",
+    "url" : "http://cqframework.org/cpg-example-opioids/ImplementationGuide/cqframework.cpg-example-opioids",
+    "version" : "1.0.0",
+    "name" : "CPGOpioidPrescribingGuidelineExamples"
+  },
+  {
     "id" : "OMTKLogic",
     "type" : "Library",
-    "url" : "http://hl7.org/fhir/uv/cpg/opiods/Library/OMTKLogic",
+    "url" : "http://cqframework.org/cpg-example-opioids/Library/OMTKLogic",
     "version" : "1.0.0",
     "name" : "OMTKLogic"
   },
   {
     "id" : "OpioidCDSR4Common",
     "type" : "Library",
-    "url" : "http://hl7.org/fhir/uv/cpg/opiods/Library/OpioidCDSR4Common",
+    "url" : "http://cqframework.org/cpg-example-opioids/Library/OpioidCDSR4Common",
     "version" : "1.0.0",
     "name" : "OpioidCDSR4Common"
   },
   {
     "id" : "OpioidCDSR4Recommendation05",
     "type" : "Library",
-    "url" : "http://hl7.org/fhir/uv/cpg/opiods/Library/OpioidCDSR4Recommendation05",
+    "url" : "http://cqframework.org/cpg-example-opioids/Library/OpioidCDSR4Recommendation05",
     "version" : "1.0.0",
     "name" : "OpioidCDSR4Recommendation05"
   },
   {
     "id" : "opioidcds-r4-recommendation-05",
     "type" : "PlanDefinition",
-    "url" : "http://hl7.org/fhir/uv/cpg/opiods/PlanDefinition/opioidcds-r4-recommendation-05",
+    "url" : "http://cqframework.org/cpg-example-opioids/PlanDefinition/opioidcds-r4-recommendation-05",
     "version" : "1.0.0",
     "name" : "OpioidCDS_R4_Recommendation_05"
   },
   {
-    "id" : "hl7.fhir.uv.cpg.opioids",
-    "type" : "ImplementationGuide",
-    "url" : "http://hl7.org/fhir/uv/cpg/opioids/ImplementationGuide/hl7.fhir.uv.cpg.opioids",
-    "version" : "1.0.0",
-    "name" : "CPGOpioidPrescribingGuidelineExamples"
-  },
-  {
     "id" : "opioids-with-ambulatory-abuse-potential",
     "type" : "ValueSet",
-    "url" : "http://hl7.org/fhir/uv/cpg/opioids/ValueSet/opioids-with-ambulatory-abuse-potential",
+    "url" : "http://cqframework.org/cpg-example-opioids/ValueSet/opioids-with-ambulatory-abuse-potential",
     "version" : "1.0.0",
     "name" : "OpioidsWithAmbulatoryAbusePotential"
   }

@@ -1,361 +1,331 @@
 {
-  "date" : "Mon, 18 Nov, 2024 18:03:39 +0000",
+  "date" : "Mon, 18 Nov, 2024 18:13:28 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
-      "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.uv.cpg.opioids.json",
-      "size" : 4786,
+      "name" : "/fsh-generated/resources/ImplementationGuide-cqframework.cpg-example-opioids.json",
+      "size" : 4702,
       "processes" : [
         {
-          "activity" : "scan",
-          "start" : 63,
-          "length" : 1
-        },
-        {
           "activity" : "load",
-          "start" : 63,
-          "length" : 26
+          "start" : 66,
+          "length" : 27
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 63,
-          "length" : 6
+          "start" : 66,
+          "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 63,
-          "length" : 174
-        },
-        {
-          "activity" : "validate",
           "start" : 66,
-          "length" : 906
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 68,
-          "length" : 1
+          "length" : 195
         },
         {
           "activity" : "validate",
-          "start" : 68,
-          "length" : 1
+          "start" : 69,
+          "length" : 1080
         },
         {
           "activity" : "generate1",
-          "start" : 68,
-          "length" : 104
+          "start" : 71,
+          "length" : 119
         },
         {
           "activity" : "generate2",
-          "start" : 72,
-          "length" : 60
-        },
-        {
-          "activity" : "generateExampleZip",
-          "start" : 86,
-          "length" : 1
+          "start" : 76,
+          "length" : 79
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 87,
-          "length" : 3
+          "start" : 91,
+          "length" : 4
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 91,
+          "start" : 95,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ActivityDefinition-opioidcds-riskassessment-request.json",
-      "size" : 2108,
+      "size" : 2117,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 63,
-          "length" : 24
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 63,
-          "length" : 1
+          "start" : 66,
+          "length" : 21
         },
         {
           "activity" : "load",
-          "start" : 63,
-          "length" : 31
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 63,
-          "length" : 1
+          "start" : 66,
+          "length" : 34
         },
         {
           "activity" : "generateNarratives",
-          "start" : 63,
-          "length" : 22
+          "start" : 67,
+          "length" : 24
         },
         {
           "activity" : "validate",
-          "start" : 66,
-          "length" : 126
+          "start" : 69,
+          "length" : 123
         },
         {
           "activity" : "generate1",
-          "start" : 68,
+          "start" : 71,
           "length" : 29
         },
         {
           "activity" : "generate2",
-          "start" : 73,
-          "length" : 19
+          "start" : 76,
+          "length" : 21
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Library-OMTKLogic.json",
-      "size" : 3168,
+      "size" : 3177,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 63,
-          "length" : 21
+          "start" : 66,
+          "length" : 16
         },
         {
           "activity" : "load",
-          "start" : 63,
-          "length" : 65
+          "start" : 66,
+          "length" : 61
         },
         {
           "activity" : "generateNarratives",
-          "start" : 63,
-          "length" : 24
+          "start" : 67,
+          "length" : 18
         },
         {
           "activity" : "validate",
-          "start" : 67,
-          "length" : 330
+          "start" : 70,
+          "length" : 321
         },
         {
           "activity" : "generate1",
-          "start" : 68,
-          "length" : 816
+          "start" : 71,
+          "length" : 829
         },
         {
           "activity" : "generate2",
-          "start" : 73,
-          "length" : 96
+          "start" : 76,
+          "length" : 117
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 87,
-          "length" : 16
+          "start" : 91,
+          "length" : 19
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Library-OpioidCDSR4Common.json",
-      "size" : 5467,
+      "size" : 5485,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 63,
-          "length" : 20
+          "start" : 66,
+          "length" : 17
         },
         {
           "activity" : "load",
-          "start" : 63,
-          "length" : 41
+          "start" : 66,
+          "length" : 37
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 63,
+          "start" : 66,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 63,
-          "length" : 200
+          "start" : 67,
+          "length" : 175
         },
         {
           "activity" : "validate",
-          "start" : 67,
-          "length" : 204
+          "start" : 71,
+          "length" : 198
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 71,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 69,
-          "length" : 1088
+          "start" : 72,
+          "length" : 1061
         },
         {
           "activity" : "generate2",
-          "start" : 73,
-          "length" : 132
+          "start" : 76,
+          "length" : 160
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 87,
-          "length" : 24
+          "start" : 91,
+          "length" : 29
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Library-OpioidCDSR4Recommendation05.json",
-      "size" : 2493,
+      "size" : 2511,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 63,
+          "start" : 66,
           "length" : 21
         },
         {
+          "activity" : "load-configure",
+          "start" : 66,
+          "length" : 1
+        },
+        {
           "activity" : "load",
-          "start" : 63,
-          "length" : 19
+          "start" : 66,
+          "length" : 16
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 63,
+          "start" : 66,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 64,
-          "length" : 6
+          "start" : 67,
+          "length" : 4
         },
         {
           "activity" : "validate",
-          "start" : 68,
-          "length" : 22
+          "start" : 71,
+          "length" : 63
         },
         {
           "activity" : "generate1",
-          "start" : 70,
-          "length" : 96
+          "start" : 73,
+          "length" : 86
         },
         {
           "activity" : "generate2",
-          "start" : 73,
-          "length" : 19
+          "start" : 76,
+          "length" : 24
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 87,
+          "start" : 91,
           "length" : 2
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/PlanDefinition-opioidcds-r4-recommendation-05.json",
-      "size" : 6086,
+      "size" : 6104,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 63,
-          "length" : 20
+          "start" : 66,
+          "length" : 23
         },
         {
           "activity" : "load",
-          "start" : 63,
-          "length" : 21
+          "start" : 66,
+          "length" : 25
         },
         {
           "activity" : "generateNarratives",
-          "start" : 64,
+          "start" : 67,
           "length" : 25
         },
         {
           "activity" : "validate",
-          "start" : 68,
-          "length" : 31
+          "start" : 71,
+          "length" : 29
         },
         {
           "activity" : "generate1",
-          "start" : 70,
+          "start" : 73,
           "length" : 41
         },
         {
           "activity" : "generate2",
-          "start" : 73,
-          "length" : 28
+          "start" : 76,
+          "length" : 27
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 87,
-          "length" : 1
+          "start" : 91,
+          "length" : 2
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-opioids-with-ambulatory-abuse-potential.json",
-      "size" : 265210,
+      "size" : 265218,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 63,
-          "length" : 73
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 63,
-          "length" : 1
-        },
-        {
-          "activity" : "loadDepInfo",
-          "start" : 63,
-          "length" : 1
+          "start" : 66,
+          "length" : 75
         },
         {
           "activity" : "load",
-          "start" : 63,
-          "length" : 112
+          "start" : 66,
+          "length" : 122
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 63,
-          "length" : 16
+          "start" : 66,
+          "length" : 13
         },
         {
           "activity" : "generateNarratives",
-          "start" : 64,
-          "length" : 241
+          "start" : 67,
+          "length" : 147
         },
         {
           "activity" : "validate",
-          "start" : 64,
-          "length" : 2103
+          "start" : 67,
+          "length" : 2085
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 68,
-          "length" : 5
+          "start" : 71,
+          "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 70,
-          "length" : 1468
+          "start" : 73,
+          "length" : 1425
         },
         {
           "activity" : "generate2",
-          "start" : 73,
-          "length" : 7638
+          "start" : 76,
+          "length" : 8378
         },
         {
           "activity" : "makeDependencies",
-          "start" : 81,
-          "length" : 2
+          "start" : 85,
+          "length" : 1
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 87,
-          "length" : 38
+          "start" : 91,
+          "length" : 35
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 91,
-          "length" : 2
+          "start" : 95,
+          "length" : 4
         }
       ]
     }

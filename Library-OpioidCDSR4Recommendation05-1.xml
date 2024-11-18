@@ -6,7 +6,7 @@
          <a:s>library OpioidCDSR4Recommendation05 version '0.1.0'</a:s>
       </a:s>
    </annotation>
-   <identifier id="OpioidCDSR4Recommendation05" system="http://hl7.org/fhir/uv/cpg/opioids" version="0.1.0"/>
+   <identifier id="OpioidCDSR4Recommendation05" system="http://cqframework.org/cpg-example-opioids" version="0.1.0"/>
    <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
    <usings>
       <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
@@ -23,7 +23,7 @@
       </def>
    </usings>
    <includes>
-      <def localId="2" locator="5:1-5:55" localIdentifier="Common" path="http://hl7.org/fhir/uv/cpg/opioids/OpioidCDSR4Common" version="0.1.0">
+      <def localId="2" locator="5:1-5:55" localIdentifier="Common" path="http://cqframework.org/cpg-example-opioids/OpioidCDSR4Common" version="0.1.0">
          <annotation xsi:type="a:Annotation">
             <a:s r="2">
                <a:s>include </a:s>

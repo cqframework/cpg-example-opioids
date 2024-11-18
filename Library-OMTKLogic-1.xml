@@ -6,7 +6,7 @@
          <a:s>library OMTKLogic version '0.0.0'</a:s>
       </a:s>
    </annotation>
-   <identifier id="OMTKLogic" system="http://hl7.org/fhir/uv/cpg/opioids" version="0.0.0"/>
+   <identifier id="OMTKLogic" system="http://cqframework.org/cpg-example-opioids" version="0.0.0"/>
    <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
    <usings>
       <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>

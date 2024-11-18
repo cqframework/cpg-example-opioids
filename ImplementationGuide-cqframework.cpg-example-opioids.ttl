@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.org/fhir/uv/cpg/opioids/ImplementationGuide/hl7.fhir.uv.cpg.opioids> a fhir:ImplementationGuide ;
+<http://cqframework.org/cpg-example-opioids/ImplementationGuide/cqframework.cpg-example-opioids> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "hl7.fhir.uv.cpg.opioids"] ; # 
+  fhir:id [ fhir:v "cqframework.cpg-example-opioids"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.uv.cpg.opioids</b></p><a name=\"hl7.fhir.uv.cpg.opioids\"> </a><a name=\"hchl7.fhir.uv.cpg.opioids\"> </a><a name=\"hl7.fhir.uv.cpg.opioids-en-US\"> </a><h2>CPGOpioidPrescribingGuidelineExamples</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/cpg/opioids/ImplementationGuide/hl7.fhir.uv.cpg.opioids</pre><div><p>Examples of CPG computable content representing CDC guidelines on prescribing opioids</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide cqframework.cpg-example-opioids</b></p><a name=\"cqframework.cpg-example-opioids\"> </a><a name=\"hccqframework.cpg-example-opioids\"> </a><a name=\"cqframework.cpg-example-opioids-en-US\"> </a><h2>CPGOpioidPrescribingGuidelineExamples</h2><p>The official URL for this implementation guide is: </p><pre>http://cqframework.org/cpg-example-opioids/ImplementationGuide/cqframework.cpg-example-opioids</pre><div><p>Examples of CPG computable content representing CDC guidelines on prescribing opioids</p>\n</div></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/opioids/ImplementationGuide/hl7.fhir.uv.cpg.opioids"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://cqframework.org/cpg-example-opioids/ImplementationGuide/cqframework.cpg-example-opioids"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "CPGOpioidPrescribingGuidelineExamples"] ; # 
   fhir:title [ fhir:v "CPG Opioid Prescribing Guideline Examples"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-11-18T18:03:39+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-18T18:13:28+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International - Clinical Decision Support WG"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International - Clinical Decision Support WG" ] ;
@@ -35,7 +35,7 @@
        fhir:display [ fhir:v "World" ]
      ] )
   ] ) ; # 
-  fhir:packageId [ fhir:v "hl7.fhir.uv.cpg.opioids"] ; # 
+  fhir:packageId [ fhir:v "cqframework.cpg-example-opioids"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
   fhir:dependsOn ( [
@@ -156,15 +156,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "path-history" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://hl7.org/fhir/uv/cpg/opioids/history.html" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "autoload-resources" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -223,6 +214,15 @@
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://cqframework.org/cpg-example-opioids/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -393,15 +393,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "path-history" ]
-       ] [
-         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://hl7.org/fhir/uv/cpg/opioids/history.html" ]
-       ] ) ;
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "autoload-resources" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -460,6 +451,15 @@
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://cqframework.org/cpg-example-opioids/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -550,7 +550,7 @@
          fhir:value [ fhir:v "PlanDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/opioids/PlanDefinition/opioidcds-r4-recommendation-05> ;
+         fhir:link <http://cqframework.org/cpg-example-opioids/PlanDefinition/opioidcds-r4-recommendation-05> ;
          fhir:reference [ fhir:v "PlanDefinition/opioidcds-r4-recommendation-05" ]
        ] ;
        fhir:name [ fhir:v "CDC Opioid Prescribing Guideline Recommendation #5" ] ;
@@ -562,7 +562,7 @@
          fhir:value [ fhir:v "ActivityDefinition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/opioids/ActivityDefinition/opioidcds-riskassessment-request> ;
+         fhir:link <http://cqframework.org/cpg-example-opioids/ActivityDefinition/opioidcds-riskassessment-request> ;
          fhir:reference [ fhir:v "ActivityDefinition/opioidcds-riskassessment-request" ]
        ] ;
        fhir:name [ fhir:v "CDC Opioid Prescribing Guideline Recommendation #7 - Risk Assessment ProcedureRequest" ] ;
@@ -574,7 +574,7 @@
          fhir:value [ fhir:v "Library" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/opioids/Library/OMTKLogic> ;
+         fhir:link <http://cqframework.org/cpg-example-opioids/Library/OMTKLogic> ;
          fhir:reference [ fhir:v "Library/OMTKLogic" ]
        ] ;
        fhir:name [ fhir:v "OMTK Logic" ] ;
@@ -586,7 +586,7 @@
          fhir:value [ fhir:v "Library" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/opioids/Library/OpioidCDSR4Common> ;
+         fhir:link <http://cqframework.org/cpg-example-opioids/Library/OpioidCDSR4Common> ;
          fhir:reference [ fhir:v "Library/OpioidCDSR4Common" ]
        ] ;
        fhir:name [ fhir:v "Opioid CDS R4 Common Logic" ] ;
@@ -598,7 +598,7 @@
          fhir:value [ fhir:v "Library" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/opioids/Library/OpioidCDSR4Recommendation05> ;
+         fhir:link <http://cqframework.org/cpg-example-opioids/Library/OpioidCDSR4Recommendation05> ;
          fhir:reference [ fhir:v "Library/OpioidCDSR4Recommendation05" ]
        ] ;
        fhir:name [ fhir:v "Opioid CDS R4 Logic for recommendation #5" ] ;
@@ -610,7 +610,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/uv/cpg/opioids/ValueSet/opioids-with-ambulatory-abuse-potential> ;
+         fhir:link <http://cqframework.org/cpg-example-opioids/ValueSet/opioids-with-ambulatory-abuse-potential> ;
          fhir:reference [ fhir:v "ValueSet/opioids-with-ambulatory-abuse-potential" ]
        ] ;
        fhir:name [ fhir:v "Opioids with Ambulatory Abuse Potential" ] ;
@@ -682,18 +682,6 @@
        fhir:value [ fhir:v "input-cache/txcache" ]
      ] )
   ] . # 
-
-<http://hl7.org/fhir/uv/cpg/opioids/PlanDefinition/opioidcds-r4-recommendation-05> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/opioids/ActivityDefinition/opioidcds-riskassessment-request> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/opioids/Library/OMTKLogic> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/opioids/Library/OpioidCDSR4Common> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/opioids/Library/OpioidCDSR4Recommendation05> a fhir:uv .
-
-<http://hl7.org/fhir/uv/cpg/opioids/ValueSet/opioids-with-ambulatory-abuse-potential> a fhir:uv .
 
 # -------------------------------------------------------------------------------------
 

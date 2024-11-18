@@ -1,7 +1,7 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://hl7.org/fhir/uv/cpg/opioids/ValueSet/opioids-with-ambulatory-abuse-potential",
+      "url" : "http://cqframework.org/cpg-example-opioids/ValueSet/opioids-with-ambulatory-abuse-potential",
       "version" : "1.0.0",
       "status" : "active",
       "name" : "OpioidsWithAmbulatoryAbusePotential",
