@@ -1,0 +1,518 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 40, errors = 24, warn = 6, info = 2-->
+<head>
+  <title>CPGOpioidPrescribingGuidelineExamples : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for CPGOpioidPrescribingGuidelineExamples</h1>
+ <p>Generated Mon Nov 18 18:04:08 UTC 2024, FHIR version 4.0.1 for hl7.fhir.uv.cpg.opioids#1.0.0 (canonical = <a href="http://hl7.org/fhir/uv/cpg/opioids">http://hl7.org/fhir/uv/cpg/opioids</a> (<a href="http://hl7.org/fhir/uv/cpg/opioids/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.7.2</span></td></tr>
+ <tr><td>Publication Code:</td><td>opioids<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.uv.cpg.opioids, Canonical = http://hl7.org/fhir/uv/cpg/opioids</td></tr>
+ <tr><td>Realm Check for CPG:</td><td><span style="color: maroon; font-weight: bold">Error: realms in IG definition and package id are different: cpg vs uv</span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Publication Request:</td><td><ul><li><span title="Not Found">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">9 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.cpg.opioids</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/cpg/opioids</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.0.2 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.0.2</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 6.1.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.cpg</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2.0.0-draft <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Illegal Version">V</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/cpg</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://build.fhir.org/ig/HL7/cqf-recommendations/</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Matched to latest patch release (current-&gt;2.0.0-draft)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.0.2 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.0.2</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">see above. Latest Release is 6.1.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">see above</td></tr>
+</table><para>Templates: cqf.fhir.template#0.7.1 -&gt; fhir.base.template#0.8.1. Tools: 0.3.0</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><a href="qa-hta.html">All OK</a></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/extension-valueset-author.html">author</a>
+ (1 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (6 uses)
+  </li>
+  <li>
+hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSystem-medicationrequest-category.html">MedicationRequestCategoryCodes</a>
+ (1 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.org/fhir/uv/cpg/opioids (Problem #1 with package-list.json at http://hl7.org/fhir/uv/cpg/opioids: Not Found)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
+ <tr><td>Summary:</td><td> errors = 24, warn = 6, info = 2, broken links = 40</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>40</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ActivityDefinition-opioidcds-riskassessment-request"><b>/github/workspace/fsh-generated/resources/ActivityDefinition-opioidcds-riskassessment-request</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-hl7.fhir.uv.cpg.opioids"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.uv.cpg.opioids</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Library-OMTKLogic"><b>/github/workspace/fsh-generated/resources/Library-OMTKLogic</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Library-OpioidCDSR4Common"><b>/github/workspace/fsh-generated/resources/Library-OpioidCDSR4Common</b></a></td><td><b>4</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Library-OpioidCDSR4Recommendation05"><b>/github/workspace/fsh-generated/resources/Library-OpioidCDSR4Recommendation05</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_PlanDefinition-opioidcds-r4-recommendation-05"><b>/github/workspace/fsh-generated/resources/PlanDefinition-opioidcds-r4-recommendation-05</b></a></td><td><b>5</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-opioids-with-ambulatory-abuse-potential"><b>/github/workspace/fsh-generated/resources/ValueSet-opioids-with-ambulatory-abuse-potential</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ActivityDefinition-opioidcds-riskassessment-request-testing.html#l337">output&#8203;/ActivityDefinition-opioidcds-riskassessment-request-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 231, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ActivityDefinition-opioidcds-riskassessment-request.change.history.html#l306">output&#8203;/ActivityDefinition-opioidcds-riskassessment-request&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 200, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ActivityDefinition-opioidcds-riskassessment-request.html#l512">output&#8203;/ActivityDefinition-opioidcds-riskassessment-request&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 274, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ActivityDefinition-opioidcds-riskassessment-request.json.html#l505">output&#8203;/ActivityDefinition-opioidcds-riskassessment-request&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 324, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ActivityDefinition-opioidcds-riskassessment-request.ttl.html#l622">output&#8203;/ActivityDefinition-opioidcds-riskassessment-request&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 308, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ActivityDefinition-opioidcds-riskassessment-request.xml.html#l627">output&#8203;/ActivityDefinition-opioidcds-riskassessment-request&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 312, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OMTKLogic-testing.html#l337">output&#8203;/Library-OMTKLogic-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 231, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OMTKLogic.change.history.html#l306">output&#8203;/Library-OMTKLogic&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 200, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OMTKLogic.html#l458">output&#8203;/Library-OMTKLogic&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 595, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OMTKLogic.json.html#l565">output&#8203;/Library-OMTKLogic&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 360, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OMTKLogic.ttl.html#l735">output&#8203;/Library-OMTKLogic&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 335, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OMTKLogic.xml.html#l750">output&#8203;/Library-OMTKLogic&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 671, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OpioidCDSR4Common-testing.html#l337">output&#8203;/Library-OpioidCDSR4Common-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 231, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OpioidCDSR4Common.change.history.html#l306">output&#8203;/Library-OpioidCDSR4Common&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 200, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OpioidCDSR4Common.html#l923">output&#8203;/Library-OpioidCDSR4Common&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 518, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OpioidCDSR4Common.json.html#l943">output&#8203;/Library-OpioidCDSR4Common&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 600, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OpioidCDSR4Common.ttl.html#l1530">output&#8203;/Library-OpioidCDSR4Common&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 552, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OpioidCDSR4Common.xml.html#l1584">output&#8203;/Library-OpioidCDSR4Common&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 831, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OpioidCDSR4Recommendation05-testing.html#l337">output&#8203;/Library-OpioidCDSR4Recommendation05-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 231, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OpioidCDSR4Recommendation05.change.history.html#l306">output&#8203;/Library-OpioidCDSR4Recommendation05&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 200, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OpioidCDSR4Recommendation05.html#l561">output&#8203;/Library-OpioidCDSR4Recommendation05&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 321, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OpioidCDSR4Recommendation05.json.html#l655">output&#8203;/Library-OpioidCDSR4Recommendation05&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 393, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OpioidCDSR4Recommendation05.ttl.html#l930">output&#8203;/Library-OpioidCDSR4Recommendation05&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 367, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Library-OpioidCDSR4Recommendation05.xml.html#l975">output&#8203;/Library-OpioidCDSR4Recommendation05&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 441, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PlanDefinition-opioidcds-r4-recommendation-05-testing.html#l337">output&#8203;/PlanDefinition-opioidcds-r4-recommendation-05-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 231, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PlanDefinition-opioidcds-r4-recommendation-05.change.history.html#l306">output&#8203;/PlanDefinition-opioidcds-r4-recommendation-05&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 200, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PlanDefinition-opioidcds-r4-recommendation-05.html#l784">output&#8203;/PlanDefinition-opioidcds-r4-recommendation-05&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 274, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PlanDefinition-opioidcds-r4-recommendation-05.json.html#l697">output&#8203;/PlanDefinition-opioidcds-r4-recommendation-05&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 445, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PlanDefinition-opioidcds-r4-recommendation-05.ttl.html#l952">output&#8203;/PlanDefinition-opioidcds-r4-recommendation-05&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 380, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="PlanDefinition-opioidcds-r4-recommendation-05.xml.html#l963">output&#8203;/PlanDefinition-opioidcds-r4-recommendation-05&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 423, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-opioids-with-ambulatory-abuse-potential-testing.html#l337">output&#8203;/ValueSet-opioids-with-ambulatory-abuse-potential-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 231, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-opioids-with-ambulatory-abuse-potential.change.history.html#l306">output&#8203;/ValueSet-opioids-with-ambulatory-abuse-potential&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 200, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-opioids-with-ambulatory-abuse-potential.html#l11431">output&#8203;/ValueSet-opioids-with-ambulatory-abuse-potential&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 313, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-opioids-with-ambulatory-abuse-potential.json.html#l15091">output&#8203;/ValueSet-opioids-with-ambulatory-abuse-potential&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 7689, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-opioids-with-ambulatory-abuse-potential.ttl.html#l29784">output&#8203;/ValueSet-opioids-with-ambulatory-abuse-potential&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 5181, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-opioids-with-ambulatory-abuse-potential.xml.html#l33489">output&#8203;/ValueSet-opioids-with-ambulatory-abuse-potential&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 8196, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#l477">output&#8203;/artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 265, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l401">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 248, column 8</a></b></td><td><b>error</b></td><td><b>The link 'Library-omtklogic.html' for &quot;OMTKLogic&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l474">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 284, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#l348">output&#8203;/toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 156, column 124</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ActivityDefinition-opioidcds-riskassessment-request"> </a>
+<h2><a href="ActivityDefinition-opioidcds-riskassessment-request.html">fsh-generated/resources/ActivityDefinition-opioidcds-riskassessment-request.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>ActivityDefinition: Validated against <a href="https://build.fhir.org/ig/HL7/cqf-recommendations/">hl7.fhir.uv.cpg</a>.<a href="https://build.fhir.org/ig/HL7/cqf-recommendations/StructureDefinition-cpg-computableactivity.html">CPG Computable Activity Definition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ActivityDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/uv&#8203;/cpg&#8203;/opiods&#8203;/ActivityDefinition&#8203;/opioidcds-riskassessment-request')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/ActivityDefinition-opioidcds-riskassessment-request.json - the canonical URL (http://hl7.org/fhir/uv/cpg/opioids/ActivityDefinition/opioidcds-riskassessment-request) does not match the URL (http://hl7.org/fhir/uv/cpg/opiods/ActivityDefinition/opioidcds-riskassessment-request)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ActivityDefinition&#8203;.code&#8203;.coding[0]&#8203;.code (l1&#8203;/c1971)</b></td><td><b>error</b></td><td><b>Unknown code '454281000124100' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240801'</b> (from <a href="qa-txservers.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4<ta>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ActivityDefinition (l1/c1972)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/ActivityDefinition-opioidcds-riskassessment-request</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.org/fhir/uv/cpg/opioids/ActivityDefinition/opioidcds-riskassessment-request vs http://hl7.org/fhir/uv/cpg/opiods/ActivityDefinition/opioidcds-riskassessment-request</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ImplementationGuide-hl7.fhir.uv.cpg.opioids"> </a>
+<h2><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.uv.cpg.opioids.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>ImplementationGuide/hl7.fhir.uv.cpg.opioids: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide (l1/c15219)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Library-OMTKLogic"> </a>
+<h2><a href="Library-OMTKLogic.html">fsh-generated/resources/Library-OMTKLogic.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Library: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/library.html">Library</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/uv&#8203;/cpg&#8203;/opiods&#8203;/Library&#8203;/OMTKLogic')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/Library-OMTKLogic.json - the canonical URL (http://hl7.org/fhir/uv/cpg/opioids/Library/OMTKLogic) does not match the URL (http://hl7.org/fhir/uv/cpg/opiods/Library/OMTKLogic)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library (l1/c264884)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/Library-OMTKLogic</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.org/fhir/uv/cpg/opioids/Library/OMTKLogic vs http://hl7.org/fhir/uv/cpg/opiods/Library/OMTKLogic</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Library-OpioidCDSR4Common"> </a>
+<h2><a href="Library-OpioidCDSR4Common.html">fsh-generated/resources/Library-OpioidCDSR4Common.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Library: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/library.html">Library</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/uv&#8203;/cpg&#8203;/opiods&#8203;/Library&#8203;/OpioidCDSR4Common')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/Library-OpioidCDSR4Common.json - the canonical URL (http://hl7.org/fhir/uv/cpg/opioids/Library/OpioidCDSR4Common) does not match the URL (http://hl7.org/fhir/uv/cpg/opiods/Library/OpioidCDSR4Common)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>./input/cql/OpioidCDSR4Common.cql</b></td><td><b>warning</b></td><td title=""><b>The function FHIRHelpers.ToString has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>OpioidCDSR4Common (l74/c7)</b></td><td><b>warning</b></td><td title=""><b>Could not resolve membership operator for terminology target of the retrieve.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library&#8203;.relatedArtifact[1]&#8203;.resource (l1&#8203;/c2396)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/uv/cpg/opioids/Library/OMTKLogic|0.0.0' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library (l1/c385459)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/Library-OpioidCDSR4Common</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.org/fhir/uv/cpg/opioids/Library/OpioidCDSR4Common vs http://hl7.org/fhir/uv/cpg/opiods/Library/OpioidCDSR4Common</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Library-OpioidCDSR4Recommendation05"> </a>
+<h2><a href="Library-OpioidCDSR4Recommendation05.html">fsh-generated/resources/Library-OpioidCDSR4Recommendation05.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Library: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/library.html">Library</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/uv&#8203;/cpg&#8203;/opiods&#8203;/Library&#8203;/OpioidCDSR4Recommendation05')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/Library-OpioidCDSR4Recommendation05.json - the canonical URL (http://hl7.org/fhir/uv/cpg/opioids/Library/OpioidCDSR4Recommendation05) does not match the URL (http://hl7.org/fhir/uv/cpg/opiods/Library/OpioidCDSR4Recommendation05)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library&#8203;.relatedArtifact[2]&#8203;.resource (l1&#8203;/c2140)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/uv/cpg/opioids/Library/OpioidCDSR4Common|0.1.0' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library (l1/c26947)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/Library-OpioidCDSR4Recommendation05</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.org/fhir/uv/cpg/opioids/Library/OpioidCDSR4Recommendation05 vs http://hl7.org/fhir/uv/cpg/opiods/Library/OpioidCDSR4Recommendation05</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_PlanDefinition-opioidcds-r4-recommendation-05"> </a>
+<h2><a href="PlanDefinition-opioidcds-r4-recommendation-05.html">fsh-generated/resources/PlanDefinition-opioidcds-r4-recommendation-05.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>PlanDefinition: Validated against <a href="https://build.fhir.org/ig/HL7/cqf-recommendations/">hl7.fhir.uv.cpg</a>.<a href="https://build.fhir.org/ig/HL7/cqf-recommendations/StructureDefinition-cpg-computableplandefinition.html">CPG Computable Plan Definition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>PlanDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/uv&#8203;/cpg&#8203;/opiods&#8203;/PlanDefinition&#8203;/opioidcds-r4-recommendation-05')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/PlanDefinition-opioidcds-r4-recommendation-05.json - the canonical URL (http://hl7.org/fhir/uv/cpg/opioids/PlanDefinition/opioidcds-r4-recommendation-05) does not match the URL (http://hl7.org/fhir/uv/cpg/opiods/PlanDefinition/opioidcds-r4-recommendation-05)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>PlanDefinition&#8203;.action[0]&#8203;.documentation[0]&#8203;.document (l1&#8203;/c3940)</b></td><td><b>error</b></td><td title="Extension_EXTP_Context_Wrong"><b>The extension http://hl7.org/fhir/StructureDefinition/cqf-strengthOfRecommendation is not allowed to be used at this point (allowed = e:PlanDefinition.action; this element is [Attachment, PlanDefinition.action.documentation.document, RelatedArtifact.document])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>PlanDefinition&#8203;.action[0]&#8203;.documentation[0]&#8203;.document (l1&#8203;/c3940)</b></td><td><b>error</b></td><td title="Extension_EXTP_Context_Wrong"><b>The extension http://hl7.org/fhir/StructureDefinition/cqf-qualityOfEvidence is not allowed to be used at this point (allowed = e:PlanDefinition.action; this element is [Attachment, PlanDefinition.action.documentation.document, RelatedArtifact.document])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>PlanDefinition (l1/c4816)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/PlanDefinition-opioidcds-r4-recommendation-05</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://hl7.org/fhir/uv/cpg/opioids/PlanDefinition/opioidcds-r4-recommendation-05 vs http://hl7.org/fhir/uv/cpg/opiods/PlanDefinition/opioidcds-r4-recommendation-05</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-opioids-with-ambulatory-abuse-potential"> </a>
+<h2><a href="ValueSet-opioids-with-ambulatory-abuse-potential.html">fsh-generated/resources/ValueSet-opioids-with-ambulatory-abuse-potential.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet&#8203;.extension[4]&#8203;.value&#8203;.ofType(code) (l1&#8203;/c334530)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet&#8203;.extension[5]&#8203;.value&#8203;.ofType(code) (l1&#8203;/c334638)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.extension[8] (l1/c335746)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension http://hl7.org/fhir/StructureDefinition/artifact-usageWarning could not be found so is not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.extension[8].url (l1/c334974)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/StructureDefinition/artifact-usageWarning' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet (l1/c531871)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b><br/><br/><span style="border: 1px grey solid; border-radius: 5px; background-color: #eeeeee; padding: 3px; margin: 3px "><i><b>Editor's Comment</b>: The slice is valid in a derived profile</i></span></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>The slice is valid in a derived profile</b></p><ul>
+ <li>ERROR: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension <span style="color: navy">(1 uses)<span></li>
+ <li>INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset|2.0.0-ballot <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset|2.0.0-ballot <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset|2.0.0-ballot <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset|2.0.0-ballot <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset|2.0.0-ballot <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|2.0.0-ballot <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset|2.0.0-ballot <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset|2.0.0-ballot <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Extension_EXTP_Context_Wrong"> </a>
+<h2>Extension_EXTP_Context_Wrong</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="PlanDefinition-opioidcds-r4-recommendation-05.html">fsh-generated/resources/PlanDefinition-opioidcds-r4-recommendation-05.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/cqf-strengthOfRecommendation is not allowed to be used at this point (allowed = e:PlanDefinition.action; this element is [Attachment, PlanDefinition.action.documentation.document, RelatedArtifact.document])</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="PlanDefinition-opioidcds-r4-recommendation-05.html">fsh-generated/resources/PlanDefinition-opioidcds-r4-recommendation-05.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/cqf-qualityOfEvidence is not allowed to be used at this point (allowed = e:PlanDefinition.action; this element is [Attachment, PlanDefinition.action.documentation.document, RelatedArtifact.document])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Extension_EXT_Unknown_NotHere"> </a>
+<h2>Extension_EXT_Unknown_NotHere</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-opioids-with-ambulatory-abuse-potential.html">fsh-generated/resources/ValueSet-opioids-with-ambulatory-abuse-potential.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/artifact-usageWarning could not be found so is not allowed here</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_DRAFT"> </a>
+<h2>MSG_DRAFT</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-opioids-with-ambulatory-abuse-potential.html">fsh-generated/resources/ValueSet-opioids-with-ambulatory-abuse-potential.json</a></td><td><b>Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-opioids-with-ambulatory-abuse-potential.html">fsh-generated/resources/ValueSet-opioids-with-ambulatory-abuse-potential.json</a></td><td><b>Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ActivityDefinition-opioidcds-riskassessment-request.html">fsh-generated/resources/ActivityDefinition-opioidcds-riskassessment-request.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/ActivityDefinition-opioidcds-riskassessment-request.json - the canonical URL (http://hl7.org/fhir/uv/cpg/opioids/ActivityDefinition/opioidcds-riskassessment-request) does not match the URL (http://hl7.org/fhir/uv/cpg/opiods/ActivityDefinition/opioidcds-riskassessment-request)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Library-OMTKLogic.html">fsh-generated/resources/Library-OMTKLogic.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/Library-OMTKLogic.json - the canonical URL (http://hl7.org/fhir/uv/cpg/opioids/Library/OMTKLogic) does not match the URL (http://hl7.org/fhir/uv/cpg/opiods/Library/OMTKLogic)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Library-OpioidCDSR4Common.html">fsh-generated/resources/Library-OpioidCDSR4Common.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/Library-OpioidCDSR4Common.json - the canonical URL (http://hl7.org/fhir/uv/cpg/opioids/Library/OpioidCDSR4Common) does not match the URL (http://hl7.org/fhir/uv/cpg/opiods/Library/OpioidCDSR4Common)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Library-OpioidCDSR4Recommendation05.html">fsh-generated/resources/Library-OpioidCDSR4Recommendation05.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/Library-OpioidCDSR4Recommendation05.json - the canonical URL (http://hl7.org/fhir/uv/cpg/opioids/Library/OpioidCDSR4Recommendation05) does not match the URL (http://hl7.org/fhir/uv/cpg/opiods/Library/OpioidCDSR4Recommendation05)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="PlanDefinition-opioidcds-r4-recommendation-05.html">fsh-generated/resources/PlanDefinition-opioidcds-r4-recommendation-05.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/PlanDefinition-opioidcds-r4-recommendation-05.json - the canonical URL (http://hl7.org/fhir/uv/cpg/opioids/PlanDefinition/opioidcds-r4-recommendation-05) does not match the URL (http://hl7.org/fhir/uv/cpg/opiods/PlanDefinition/opioidcds-r4-recommendation-05)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Library-OpioidCDSR4Common.html">fsh-generated/resources/Library-OpioidCDSR4Common.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/uv/cpg/opioids/Library/OMTKLogic|0.0.0' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Library-OpioidCDSR4Recommendation05.html">fsh-generated/resources/Library-OpioidCDSR4Recommendation05.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/uv/cpg/opioids/Library/OpioidCDSR4Common|0.1.0' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
+<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-opioids-with-ambulatory-abuse-potential.html">fsh-generated/resources/ValueSet-opioids-with-ambulatory-abuse-potential.json</a></td><td><b>URL value 'http://hl7.org/fhir/StructureDefinition/artifact-usageWarning' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALIDATION_HL7_WG_NEEDED"> </a>
+<h2>VALIDATION_HL7_WG_NEEDED</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ActivityDefinition-opioidcds-riskassessment-request.html">fsh-generated/resources/ActivityDefinition-opioidcds-riskassessment-request.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-hl7.fhir.uv.cpg.opioids.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Library-OMTKLogic.html">fsh-generated/resources/Library-OMTKLogic.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Library-OpioidCDSR4Common.html">fsh-generated/resources/Library-OpioidCDSR4Common.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Library-OpioidCDSR4Recommendation05.html">fsh-generated/resources/Library-OpioidCDSR4Recommendation05.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="PlanDefinition-opioidcds-r4-recommendation-05.html">fsh-generated/resources/PlanDefinition-opioidcds-r4-recommendation-05.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-opioids-with-ambulatory-abuse-potential.html">fsh-generated/resources/ValueSet-opioids-with-ambulatory-abuse-potential.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+</table>
+</body>
+</html>

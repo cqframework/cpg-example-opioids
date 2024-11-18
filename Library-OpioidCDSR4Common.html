@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Opioid CDS R4 Common Logic - CPG Opioid Prescribing Guideline Examples v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/cqf.css"/>
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.4"}
+    h3,h4,h5,h6{--heading-prefix:"2.4"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="https://github.com/cqframework"><img src="assets/images/cqf.png" alt="Visit the CQF github organization website" height="50"/> </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">CPG Opioid Prescribing Guideline Examples</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Opioid CDS R4 Common Logic</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">CPG Opioid Prescribing Guideline Examples - Local Development build (v1.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://hl7.org/fhir/uv/cpg/opioids/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Library-OpioidCDSR4Common.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Library-OpioidCDSR4Common.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Library-OpioidCDSR4Common.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+  <h2 id="root">Library: Opioid CDS R4 Common Logic
+(Experimental)
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.org/fhir/uv/cpg/opiods/Library/OpioidCDSR4Common<button data-clipboard-text="http://hl7.org/fhir/uv/cpg/opiods/Library/OpioidCDSR4Common" title="Click to copy URL" class="btn-copy"></button></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button data-clipboard-text="http://hl7.org/fhir/uv/cpg/opiods/Library/OpioidCDSR4Common|1.0.0" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2024-11-18
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">OpioidCDSR4Common</span></td>
+    </tr>
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Usage:</em>Clinical Focus:&nbsp;Medication requested (situation), Clinical Focus:&nbsp;Chronic pain (finding)</p>
+</td>
+    </tr>
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: CDC 2016+</p>
+</td>
+    </tr>
+
+  </table>
+
+
+<p>
+<p>Common Opioid Decision Support Logic for use in implementing CDC Opioid Prescribing Guidelines.</p>
+
+</p>
+
+
+<p>
+<p>This library contains common logic across recommendations including MME calculations, conversions, and looking up codes in valuesets.</p>
+
+</p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <!-- <p>
+  Formats: <a href="Library-OpioidCDSR4Common.xml.html">XML</a>, <a href="Library-OpioidCDSR4Common.json.html">JSON</a>, <a href="Library-OpioidCDSR4Common.ttl.html">Turtle</a>
+  </p> -->
+
+  
+
+
+  <div><p class="res-header-id"><b>Generated Narrative: Library OpioidCDSR4Common</b></p><a name="OpioidCDSR4Common"> </a><a name="hcOpioidCDSR4Common"> </a><a name="OpioidCDSR4Common-en-US"> </a><h2>Participants</h2><table class="grid"><tr><td>Author</td><td>Kensaku Kawamoto, MD, PhD, MHS</td></tr><tr><td>Author</td><td>Bryn Rhodes</td></tr><tr><td>Author</td><td>Floyd Eisenberg, MD, MPH</td></tr><tr><td>Author</td><td>Robert McClure, MD, MPH</td></tr></table><h2>Related Artifacts</h2><table class="grid"><tr><td>Documentation</td><td>CDC guideline for prescribing opioids for chronic pain</td><td>https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fmmwr%2Fvolumes%2F65%2Frr%2Frr6501e1er.htm</td></tr><tr><td>Depends On</td><td>Library OMTKLogic</td><td><code>http://hl7.org/fhir/uv/cpg/opioids/Library/OMTKLogic|0.0.0</code></td></tr><tr><td>Depends On</td><td>Code System SNOMED</td><td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a></td></tr><tr><td>Depends On</td><td>Code System Medication Request Category Codes</td><td><a href="http://terminology.hl7.org/6.0.2/CodeSystem-medicationrequest-category.html">MedicationRequest Category Codes</a></td></tr><tr><td>Depends On</td><td>Value Set Active Condition</td><td><a href="https://build.fhir.org/ig/HL7/cqf-recommendations/ValueSet-cpg-active-condition-vs.html">CPG Active Condition Value Set</a></td></tr><tr><td>Depends On</td><td>Value Set Benzodiazepines</td><td><code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/benzodiazepines-medications</code></td></tr><tr><td>Depends On</td><td>Value Set End of Life Conditions</td><td><code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/end-of-life-conditions</code></td></tr><tr><td>Depends On</td><td>Value Set Hospice Disposition</td><td><code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/hospice-disposition</code></td></tr><tr><td>Depends On</td><td>Value Set Hospice Finding Codes</td><td><code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/hospice-finding</code></td></tr><tr><td>Depends On</td><td>Value Set Hospice Procedure Codes</td><td><code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/hospice-procedure</code></td></tr><tr><td>Depends On</td><td>Value Set Illicit Drug Screening</td><td><code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/illicit-drug-urine-screening</code></td></tr><tr><td>Depends On</td><td>Value Set Limited Life Expectancy Conditions</td><td><code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/limited-life-expectancy-conditions</code></td></tr><tr><td>Depends On</td><td>Value Set Long Acting Opioids</td><td><code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/long-acting-opioids</code></td></tr><tr><td>Depends On</td><td>Value Set Naloxone</td><td><code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/naloxone-medications</code></td></tr><tr><td>Depends On</td><td>Value Set Risk Assessment</td><td><code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioid-abuse-assessment</code></td></tr><tr><td>Depends On</td><td>Value Set Opioid Drug Screening</td><td><code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioid-urine-screening</code></td></tr><tr><td>Depends On</td><td>Value Set Ambulatory Abuse Potential Opioids</td><td><code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioids-abused-in-ambulatory-care</code></td></tr><tr><td>Depends On</td><td>Value Set Substance Abuse</td><td><code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/substance-abuse</code></td></tr></table><h2>Parameters</h2><table class="grid"><tr><td>IsForChronicPain</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>Active Ambulatory Opioid Rx</td><td>out</td><td>0</td><td>*</td><td>MedicationRequest</td></tr><tr><td>Active Ambulatory Benzodiazepine Rx</td><td>out</td><td>0</td><td>*</td><td>MedicationRequest</td></tr><tr><td>Active Ambulatory Naloxone Rx</td><td>out</td><td>0</td><td>*</td><td>MedicationRequest</td></tr><tr><td>Ambulatory Opioid Rx</td><td>out</td><td>0</td><td>*</td><td>MedicationRequest</td></tr><tr><td>End of Life Assessment</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr></table><h2>Data Requirements</h2><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>medication</td><td>In ValueSet <code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioids-abused-in-ambulatory-care</code></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/medication.html">Medication</a></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>medication</td><td>In ValueSet <code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/benzodiazepines-medications</code></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/medication.html">Medication</a></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>medication</td><td>In ValueSet <code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/naloxone-medications</code></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/medication.html">Medication</a></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>medication</td><td>In ValueSet <code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioids-abused-in-ambulatory-care</code></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/medication.html">Medication</a></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/condition.html">Condition</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>code</td><td>In ValueSet <code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/end-of-life-conditions</code></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/condition.html">Condition</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>code</td><td>In ValueSet <code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/limited-life-expectancy-conditions</code></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>code</td><td>One of these codes: <a href="http://snomed.info/id/306205009">SNOMED CT 306205009</a>: Referral to hospice</td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>code</td><td>In ValueSet <code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/hospice-procedure</code></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>code</td><td>In ValueSet <code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/hospice-procedure</code></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>code</td><td>In ValueSet <code>http://fhir.org/guides/cdc/opioid-cds/ValueSet/hospice-finding</code></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td></tr></table><h2>Contents</h2><p><code>text/cql</code></p><pre><code class="language-sql">library OpioidCDSR4Common version '0.1.0'
+
+using FHIR version '4.0.0'
+
+include FHIRHelpers version '4.0.0' called FHIRHelpers
+include OMTKLogic version '0.0.0' called OMTKLogic
+
+codesystem "SNOMED": 'http://snomed.info/sct'
+codesystem "Medication Request Category Codes": 'http://terminology.hl7.org/CodeSystem/medicationrequest-category'
+
+valueset "Active Condition": 'http://hl7.org/fhir/uv/cpg/ValueSet/cpg-active-condition-vs'
+valueset "Benzodiazepines": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/benzodiazepines-medications'
+// TODO: Fix this name
+valueset "End of Life Conditions": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/end-of-life-conditions'
+// Harvested from VSAC - OID: 2.16.840.1.113762.1.4.1108.15
+// NOTE: This harvest note is incorrect, none of the following 3 value sets contain any of the codes in the above referenced valueset
+// Rob will construct an appropriate hospice value set aligned with current eCQM program usage and we will use that when available
+valueset "Hospice Disposition": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/hospice-disposition'
+valueset "Hospice Finding Codes": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/hospice-finding'
+valueset "Hospice Procedure Codes": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/hospice-procedure'
+valueset "Illicit Drug Screening": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/illicit-drug-urine-screening'
+// Harvested from VSAC - OID: 2.16.840.1.113883.3.526.3.1259
+valueset "Limited Life Expectancy Conditions": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/limited-life-expectancy-conditions'
+valueset "Long Acting Opioids": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/long-acting-opioids'
+valueset "Naloxone": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/naloxone-medications'
+valueset "Risk Assessment": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioid-abuse-assessment'
+valueset "Opioid Drug Screening": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioid-urine-screening'
+valueset "Ambulatory Abuse Potential Opioids": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioids-abused-in-ambulatory-care'
+valueset "Substance Abuse": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/substance-abuse'
+
+// TODO: Turn this into a valueset
+code "Referral to Hospice": '306205009' from "SNOMED"
+// TODO: Turn this into a valueset
+code "Outpatient": 'outpatient' from "Medication Request Category Codes"
+
+// TODO: Capture process decisions for long-term opioid use
+define IsForChronicPain: true
+
+define "Active Ambulatory Opioid Rx":
+  [MedicationRequest: "Ambulatory Abuse Potential Opioids"] Rx
+    where Rx.status = 'active'
+      and ToCodes(Rx.category.coding) contains "Outpatient"
+
+define "Active Ambulatory Benzodiazepine Rx":
+  [MedicationRequest: "Benzodiazepines"] Rx
+    where Rx.status = 'active'
+      and ToCodes(Rx.category.coding) contains "Outpatient"
+
+define "Active Ambulatory Naloxone Rx":
+  [MedicationRequest: "Naloxone"] Rx
+    where Rx.status = 'active'
+      and ToCodes(Rx.category.coding) contains "Outpatient"
+
+define "Ambulatory Opioid Rx":
+  [MedicationRequest: "Ambulatory Abuse Potential Opioids"] Rx
+      where ToCodes(Rx.category.coding) contains "Outpatient"
+
+define "End of Life Assessment":
+  // 1. Conditions indicating end of life or with limited life expectancy
+  exists (
+    (
+      [Condition: "End of Life Conditions"] C
+        where C.clinicalStatus in "Active Condition"
+    )
+    union
+    (
+      [Condition: code in "Limited Life Expectancy Conditions"] C
+        where C.clinicalStatus in "Active Condition"
+    )
+  )
+  // 2. Admitted/referred/discharged to hospice care
+  or exists (
+    (
+      [ServiceRequest: code in "Referral to Hospice"] RR
+        where RR.status in { 'active', 'completed' }
+    )
+    union
+    (
+      [ServiceRequest: code in "Hospice Procedure Codes"] P
+        where P.status in { 'in-progress', 'completed' }
+    )
+    union
+    (
+      [ServiceRequest: code in "Hospice Procedure Codes"] E
+        where E.status in { 'planned', 'arrived', 'in-progress', 'finished', 'onleave' }
+    )
+    union
+    (
+      [Observation: code in "Hospice Finding Codes"] O
+        where not (O.status in { 'unknown', 'entered-in-error', 'cancelled' })
+    )
+    union
+    (
+      [Encounter] E
+        where
+          (
+            if E.hospitalization.dischargeDisposition.coding is null
+                or not exists (E.hospitalization.dischargeDisposition.coding)
+              then false
+            else E.hospitalization.dischargeDisposition in "Hospice Disposition"
+          )
+          and E.status in { 'planned', 'arrived', 'in-progress', 'finished', 'onleave' }
+    )
+  )
+
+define function Prescriptions(Orders List&lt;MedicationRequest&gt;):
+  Orders O
+    let
+      // NOTE: Assuming medication is specified as a CodeableConcept with a single RxNorm code
+      rxNormCode: ToCode(O.medication.coding[0]),
+      medicationName: OMTKLogic.GetMedicationName(rxNormCode),
+      // NOTE: Assuming a single dosage instruction element
+      dosageInstruction: O.dosageInstruction[0],
+      repeat: dosageInstruction.timing.repeat,
+      frequency: Coalesce(repeat.frequencyMax.value, repeat.frequency.value),
+      period: System.Quantity { value: repeat.period.value, unit: repeat.periodUnit.value },
+      doseDescription:
+        Coalesce(
+          // There should be a conversion from FHIR.SimpleQuantity to System.Quantity
+          if dosageInstruction.doseAndRate[0].dose is FHIR.Range
+            then ToString(ToQuantity(dosageInstruction.doseAndRate[0].dose.low))
+                          + '-' + ToString(ToQuantity(dosageInstruction.doseAndRate[0].dose.high))
+                          + dosageInstruction.doseAndRate[0].dose.high.unit.value
+            else ToString(ToQuantity(dosageInstruction.doseAndRate[0].dose)),
+            ''
+        ),
+      frequencyDescription:
+        ToString(dosageInstruction.timing.repeat.frequency.value) +
+          Coalesce(
+            '-' + ToString(dosageInstruction.timing.repeat.frequencyMax.value),
+            ''
+          )
+    return {
+      rxNormCode: rxNormCode,
+      isDraft: O.status.value = 'draft',
+      // NOTE: Assuming asNeeded is expressed as a boolean
+      isPRN: dosageInstruction.asNeeded.value,
+      prescription:
+        if dosageInstruction.text is not null then
+          medicationName + ' ' + dosageInstruction.text.value
+        else
+          // TODO: Shouldn't need the .value here on asNeededBoolean
+          medicationName + ' ' + doseDescription + ' q' + frequencyDescription + (if dosageInstruction.asNeeded.value then ' PRN' else ''),
+      // TODO: Shouldn't need the ToQuantity here...
+      dose: if dosageInstruction.doseAndRate[0].dose is FHIR.Range
+            then ToQuantity(dosageInstruction.doseAndRate[0].dose.high)
+            else ToQuantity(dosageInstruction.doseAndRate[0].dose),
+      dosesPerDay: Coalesce(OMTKLogic.ToDaily(frequency, period), 1.0)
+    }
+
+define function MME(prescriptions List&lt;MedicationRequest&gt;):
+  (Prescriptions(prescriptions)) P
+    let mme: SingletonFrom(OMTKLogic.CalculateMMEs({ { rxNormCode: P.rxNormCode, doseQuantity: P.dose, dosesPerDay: P.dosesPerDay } }))
+    return {
+      rxNormCode: P.rxNormCode,
+      isDraft: P.isDraft,
+      isPRN: P.isPRN,
+      prescription: P.prescription,
+      dailyDose: mme.dailyDoseDescription,
+      conversionFactor: mme.conversionFactor,
+      mme: mme.mme
+    }
+
+define function TotalMME(prescriptions List&lt;MedicationRequest&gt;):
+  System.Quantity {
+    value: Sum((MME(prescriptions)) M return M.mme.value),
+    unit: 'mg/d'
+  }
+
+define function ProbableDaysInRange(Orders List&lt;MedicationRequest&gt;, daysPast Integer, numDaysInDaysPast Integer):
+  Orders orders
+    let
+      frequency: orders.dosageInstruction[0].timing.repeat.frequency.value,
+      period: orders.dosageInstruction[0].timing.repeat.period.value,
+      periodDays: GetPeriodDays(orders.dosageInstruction[0].timing.repeat.periodUnit.value),
+      dosesPerDay:
+        if (frequency / (period * periodDays)) &gt;= 1.0
+        then 1.0
+        else frequency / (period * periodDays),
+      repeat: orders.dispenseRequest.numberOfRepeatsAllowed.value,
+      supplyDuration: GetDurationInDays(orders.dispenseRequest.expectedSupplyDuration),
+      validityPeriod: days between orders.dispenseRequest.validityPeriod."start".value and Today(),
+      endDifference:
+        if orders.dispenseRequest.validityPeriod."end".value &lt; Today()
+        then days between orders.dispenseRequest.validityPeriod."end".value and Today()
+        else 0
+    return
+      if (repeat * supplyDuration) &lt; numDaysInDaysPast then false
+      else
+        (dosesPerDay * ((repeat * supplyDuration) / validityPeriod) * (daysPast - endDifference)) &gt;= numDaysInDaysPast
+
+define function GetPeriodDays(value System.String):
+  case
+    when value = 'a' then 365.0
+    when value = 'mo' then 30.0
+    when value = 'h' then 1.0/24.0
+    when value = 'min' then 1.0/24.0*60.0
+    when value = 's' then 1.0/24.0*60.0*60.0
+    when value = 'ms' then 1.0/24.0*60.0*60.0*1000.0
+    else 1.0
+  end
+
+  define function GetDurationInDays(value FHIR.Duration):
+    case
+      when StartsWith(value.unit.value, 'a') then value.value.value * 365.0
+      when StartsWith(value.unit.value, 'mo') then value.value.value * 30.0
+      when StartsWith(value.unit.value, 'wk') then value.value.value * 7.0
+      when StartsWith(value.unit.value, 'd') then value.value.value
+      when StartsWith(value.unit.value, 'h') then value.value.value / 24.0
+      when StartsWith(value.unit.value, 'min') then value.value.value / 60.0 / 24.0
+      when StartsWith(value.unit.value, 's') then value.value.value / 60.0 / 60.0 / 24.0
+      when StartsWith(value.unit.value, 'ms') then value.value.value / 60.0 / 60.0 / 24.0 / 1000.0
+      else Message(1000, true, 'Undefined', 'Error', 'Unsupported duration unit')
+    end
+
+define function GetIngredient(rxNormCode Code):
+  OMTKLogic.GetIngredients(rxNormCode).ingredientName
+
+define function GetIngredients(rxNormCodes List&lt;Code&gt;):
+  rxNormCodes rnc return GetIngredient(rnc)
+
+define function GetMedicationNames(medications List&lt;MedicationRequest&gt;):
+  medications M
+    return OMTKLogic.GetIngredients(ToRxNormCode(M.medication.coding)).rxNormCode.display
+
+/*
+*  Conversion Functions
+*/
+
+define function ToCode(coding FHIR.Coding):
+  System.Code {
+    code: coding.code.value,
+    system: coding.system.value,
+    version: coding.version.value,
+    display: coding.display.value
+  }
+
+define function ToCodes(coding List&lt;FHIR.Coding&gt;):
+  coding c return ToCode(c)
+
+define function ToRxNormCode(coding List&lt;FHIR.Coding&gt;):
+  singleton from (
+    coding C where C.system = 'http://www.nlm.nih.gov/research/umls/rxnorm'
+  )
+
+define function ToQuantity(quantity FHIR.Quantity):
+  System.Quantity { value: quantity.value.value, unit: quantity.unit.value }
+</code></pre><p><code>Content not shown - (</code><code>application/elm+xml</code>, size = 266Kb )</p></div>
+
+    <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2023+ The MITRE Corporation <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/dss/index.cfm">HL7 International - Clinical Decision Support WG</a>.  Package hl7.fhir.uv.cpg.opioids#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 18, 2024 18:03+0000">2024-11-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"><a name="l923">​</a>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" href="http://hl7.org/fhir/uv/cpg/opioids/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
+  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
