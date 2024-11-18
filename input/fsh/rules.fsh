@@ -1,5 +1,5 @@
 RuleSet: LibraryMetadata(id)
-* url = "http://hl7.org/fhir/uv/cpg/opiods/Library/{id}"
+* url = "http://cqframework.org/cpg-example-opioids/Library/{id}"
 * status = #active
 * experimental = true
 * publisher = "Centers for Disease Control and Prevention (CDC)"
@@ -17,7 +17,7 @@ RuleSet: LibraryMetadata(id)
   * valueCodeableConcept = $sct#82423001 "Chronic pain (finding)"
 
 RuleSet: DefinitionMetadata(type, id)
-* url = "http://hl7.org/fhir/uv/cpg/opiods/{type}/{id}"
+* url = "http://cqframework.org/cpg-example-opioids/{type}/{id}"
 * status = #draft
 * experimental = true
 * publisher = "Centers for Disease Control and Prevention (CDC)"

@@ -3,9 +3,8 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.uv.cpg.opioids
-canonical: http://hl7.org/fhir/uv/cpg/opioids # http://fhir.org/guides/cdc/opioid-cds
-# where should this url be used? "https://cds.ahrq.gov/cdsconnect/artifact/anthrax-post-exposure-prophylaxis"
+id: cqframework.cpg-example-opioids
+canonical: http://cqframework.org/cpg-example-opioids
 name: CPGOpioidPrescribingGuidelineExamples
 title: CPG Opioid Prescribing Guideline Examples
 description: Examples of CPG computable content representing CDC guidelines on prescribing opioids
