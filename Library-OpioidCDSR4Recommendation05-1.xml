@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1">
-   <annotation translatorOptions="EnableAnnotations,EnableLocators,DisableListDemotion,DisableListPromotion" signatureLevel="None" xsi:type="a:CqlToElmInfo"/>
+<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1" localId="0">
+   <annotation translatorOptions="EnableAnnotations,EnableLocators,DisableListDemotion,DisableListPromotion" signatureLevel="Overloads" xsi:type="a:CqlToElmInfo"/>
    <annotation xsi:type="a:Annotation">
-      <a:s r="62">
+      <a:s r="294">
          <a:s>library OpioidCDSR4Recommendation05 version '0.1.0'</a:s>
       </a:s>
    </annotation>
    <identifier id="OpioidCDSR4Recommendation05" system="http://cqframework.org/cpg-example-opioids" version="0.1.0"/>
    <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
    <usings>
-      <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
-      <def localId="1" locator="3:1-3:26" localIdentifier="FHIR" uri="http://hl7.org/fhir" version="4.0.0">
+      <def localId="1" localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
+      <def localId="206" locator="3:1-3:26" localIdentifier="FHIR" uri="http://hl7.org/fhir" version="4.0.0">
          <annotation xsi:type="a:Annotation">
-            <a:s r="1">
+            <a:s r="206">
                <a:s>using </a:s>
                <a:s>
                   <a:s>FHIR</a:s>
@@ -23,9 +23,9 @@
       </def>
    </usings>
    <includes>
-      <def localId="2" locator="5:1-5:55" localIdentifier="Common" path="http://cqframework.org/cpg-example-opioids/OpioidCDSR4Common" version="0.1.0">
+      <def localId="207" locator="5:1-5:55" localIdentifier="Common" path="http://cqframework.org/cpg-example-opioids/OpioidCDSR4Common" version="0.1.0">
          <annotation xsi:type="a:Annotation">
-            <a:s r="2">
+            <a:s r="207">
                <a:s>include </a:s>
                <a:s>
                   <a:s>OpioidCDSR4Common</a:s>
@@ -36,9 +36,9 @@
       </def>
    </includes>
    <parameters>
-      <def localId="5" locator="18:1-18:54" name="ContextPrescriptions" accessLevel="Public">
+      <def localId="208" locator="18:1-18:54" name="ContextPrescriptions" accessLevel="Public">
          <annotation xsi:type="a:Annotation">
-            <a:s r="5">
+            <a:s r="208">
                <a:s>/*
 **
 ** Recommendation #5
@@ -51,70 +51,70 @@
 */
 
 parameter ContextPrescriptions </a:s>
-               <a:s r="4">
+               <a:s r="209">
                   <a:s>List&lt;</a:s>
-                  <a:s r="3">
+                  <a:s r="210">
                      <a:s>MedicationRequest</a:s>
                   </a:s>
                   <a:s>></a:s>
                </a:s>
             </a:s>
          </annotation>
-         <parameterTypeSpecifier localId="4" locator="18:32-18:54" xsi:type="ListTypeSpecifier">
-            <elementType localId="3" locator="18:37-18:53" name="fhir:MedicationRequest" xsi:type="NamedTypeSpecifier"/>
+         <parameterTypeSpecifier localId="209" locator="18:32-18:54" xsi:type="ListTypeSpecifier">
+            <elementType localId="210" locator="18:37-18:53" name="fhir:MedicationRequest" xsi:type="NamedTypeSpecifier"/>
          </parameterTypeSpecifier>
       </def>
    </parameters>
    <contexts>
-      <def locator="20:1-20:15" name="Patient"/>
+      <def localId="214" locator="20:1-20:15" name="Patient"/>
    </contexts>
    <statements>
-      <def locator="20:1-20:15" name="Patient" context="Patient">
-         <expression xsi:type="SingletonFrom">
-            <operand locator="20:1-20:15" dataType="fhir:Patient" xsi:type="Retrieve"/>
+      <def localId="212" locator="20:1-20:15" name="Patient" context="Patient">
+         <expression localId="213" xsi:type="SingletonFrom">
+            <operand localId="211" locator="20:1-20:15" dataType="fhir:Patient" xsi:type="Retrieve"/>
          </expression>
       </def>
-      <def localId="11" locator="27:1-28:33" name="Exclusion Criteria" context="Patient" accessLevel="Public">
+      <def localId="231" locator="27:1-28:33" name="Exclusion Criteria" context="Patient" accessLevel="Public">
          <annotation xsi:type="a:Annotation">
-            <a:s r="11">
+            <a:s r="231">
                <a:s>define &quot;Exclusion Criteria&quot;:
   </a:s>
-               <a:s r="10">
-                  <a:s r="9">
+               <a:s r="233">
+                  <a:s r="232">
                      <a:s>Common</a:s>
                   </a:s>
                   <a:s>.</a:s>
-                  <a:s r="10">
+                  <a:s r="233">
                      <a:s>&quot;End of Life Assessment&quot;</a:s>
                   </a:s>
                </a:s>
             </a:s>
          </annotation>
-         <expression localId="10" locator="28:3-28:33" name="End of Life Assessment" libraryName="Common" xsi:type="ExpressionRef"/>
+         <expression localId="233" locator="28:3-28:33" name="End of Life Assessment" libraryName="Common" xsi:type="ExpressionRef"/>
       </def>
-      <def localId="21" locator="30:1-31:82" name="Total MME" context="Patient" accessLevel="Public">
+      <def localId="237" locator="30:1-31:82" name="Total MME" context="Patient" accessLevel="Public">
          <annotation xsi:type="a:Annotation">
-            <a:s r="21">
+            <a:s r="237">
                <a:s>define &quot;Total MME&quot;:
   </a:s>
-               <a:s r="20">
-                  <a:s r="15">
+               <a:s r="243">
+                  <a:s r="238">
                      <a:s>Common</a:s>
                   </a:s>
                   <a:s>.</a:s>
-                  <a:s r="20">
+                  <a:s r="243">
                      <a:s>TotalMME(</a:s>
-                     <a:s r="19">
-                        <a:s r="16">
+                     <a:s r="242">
+                        <a:s r="239">
                            <a:s>ContextPrescriptions</a:s>
                         </a:s>
                         <a:s> union </a:s>
-                        <a:s r="18">
-                           <a:s r="17">
+                        <a:s r="241">
+                           <a:s r="240">
                               <a:s>Common</a:s>
                            </a:s>
                            <a:s>.</a:s>
-                           <a:s r="18">
+                           <a:s r="241">
                               <a:s>&quot;Active Ambulatory Opioid Rx&quot;</a:s>
                            </a:s>
                         </a:s>
@@ -124,263 +124,275 @@ parameter ContextPrescriptions </a:s>
                </a:s>
             </a:s>
          </annotation>
-         <expression localId="20" locator="31:3-31:82" name="TotalMME" libraryName="Common" xsi:type="FunctionRef">
-            <operand localId="19" locator="31:19-31:81" xsi:type="Union">
-               <operand localId="16" locator="31:19-31:38" name="ContextPrescriptions" xsi:type="ParameterRef"/>
-               <operand localId="18" locator="31:46-31:81" name="Active Ambulatory Opioid Rx" libraryName="Common" xsi:type="ExpressionRef"/>
+         <expression localId="243" locator="31:3-31:82" name="TotalMME" libraryName="Common" xsi:type="FunctionRef">
+            <operand localId="242" locator="31:19-31:81" xsi:type="Union">
+               <operand localId="239" locator="31:19-31:38" name="ContextPrescriptions" xsi:type="ParameterRef"/>
+               <operand localId="241" locator="31:46-31:81" name="Active Ambulatory Opioid Rx" libraryName="Common" xsi:type="ExpressionRef"/>
             </operand>
          </expression>
       </def>
-      <def localId="26" locator="22:1-25:32" name="Inclusion Criteria" context="Patient" accessLevel="Public">
+      <def localId="216" locator="22:1-25:32" name="Inclusion Criteria" context="Patient" accessLevel="Public">
          <annotation xsi:type="a:Annotation">
-            <a:s r="26">
+            <a:s r="216">
                <a:s>define &quot;Inclusion Criteria&quot;:
   </a:s>
-               <a:s r="25">
-                  <a:s r="14">
-                     <a:s r="8">
-                        <a:s r="6">
+               <a:s r="217">
+                  <a:s r="218">
+                     <a:s r="219">
+                        <a:s r="224">
                            <a:s>AgeInYears()</a:s>
                         </a:s>
-                        <a:s r="7"> >= 18</a:s>
+                        <a:s r="226"> >= 18</a:s>
                      </a:s>
                      <a:s>
     and </a:s>
-                     <a:s r="13">
+                     <a:s r="229">
                         <a:s>not </a:s>
-                        <a:s r="12">
+                        <a:s r="234">
                            <a:s>&quot;Exclusion Criteria&quot;</a:s>
                         </a:s>
                      </a:s>
                   </a:s>
                   <a:s>
     and </a:s>
-                  <a:s r="24">
-                     <a:s r="22">
+                  <a:s r="235">
+                     <a:s r="244">
                         <a:s>&quot;Total MME&quot;</a:s>
                      </a:s>
                      <a:s> >= </a:s>
-                     <a:s r="23">
+                     <a:s r="245">
                         <a:s>50 'mg/d'</a:s>
                      </a:s>
                   </a:s>
                </a:s>
             </a:s>
          </annotation>
-         <expression localId="25" locator="23:3-25:32" xsi:type="And">
-            <operand localId="14" locator="23:3-24:32" xsi:type="And">
-               <operand localId="8" locator="23:3-23:20" xsi:type="GreaterOrEqual">
-                  <operand localId="6" locator="23:3-23:14" precision="Year" xsi:type="CalculateAge">
-                     <operand path="birthDate.value" xsi:type="Property">
-                        <source name="Patient" xsi:type="ExpressionRef"/>
+         <expression localId="217" locator="23:3-25:32" xsi:type="And">
+            <operand localId="218" locator="23:3-24:32" xsi:type="And">
+               <operand localId="219" locator="23:3-23:20" xsi:type="GreaterOrEqual">
+                  <signature localId="227" name="t:Integer" xsi:type="NamedTypeSpecifier"/>
+                  <signature localId="228" name="t:Integer" xsi:type="NamedTypeSpecifier"/>
+                  <operand localId="224" locator="23:3-23:14" precision="Year" xsi:type="CalculateAge">
+                     <signature localId="225" name="t:Date" xsi:type="NamedTypeSpecifier"/>
+                     <operand localId="223" path="birthDate.value" xsi:type="Property">
+                        <source localId="222" name="Patient" xsi:type="ExpressionRef"/>
                      </operand>
                   </operand>
-                  <operand localId="7" locator="23:19-23:20" valueType="t:Integer" value="18" xsi:type="Literal"/>
+                  <operand localId="226" locator="23:19-23:20" valueType="t:Integer" value="18" xsi:type="Literal"/>
                </operand>
-               <operand localId="13" locator="24:9-24:32" xsi:type="Not">
-                  <operand localId="12" locator="24:13-24:32" name="Exclusion Criteria" xsi:type="ExpressionRef"/>
+               <operand localId="229" locator="24:9-24:32" xsi:type="Not">
+                  <operand localId="234" locator="24:13-24:32" name="Exclusion Criteria" xsi:type="ExpressionRef"/>
                </operand>
             </operand>
-            <operand localId="24" locator="25:9-25:32" xsi:type="GreaterOrEqual">
-               <operand localId="22" locator="25:9-25:19" name="Total MME" xsi:type="ExpressionRef"/>
-               <operand localId="23" locator="25:24-25:32" value="50" unit="mg/d" xsi:type="Quantity"/>
+            <operand localId="235" locator="25:9-25:32" xsi:type="GreaterOrEqual">
+               <signature localId="246" name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+               <signature localId="247" name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+               <operand localId="244" locator="25:9-25:19" name="Total MME" xsi:type="ExpressionRef"/>
+               <operand localId="245" locator="25:24-25:32" value="50" unit="mg/d" xsi:type="Quantity"/>
             </operand>
          </expression>
       </def>
-      <def localId="31" locator="33:1-33:43" name="Taper Now" context="Patient" accessLevel="Public">
+      <def localId="249" locator="33:1-33:43" name="Taper Now" context="Patient" accessLevel="Public">
          <annotation xsi:type="a:Annotation">
-            <a:s r="31">
+            <a:s r="249">
                <a:s>define &quot;Taper Now&quot;: </a:s>
-               <a:s r="30">
-                  <a:s r="28">
-                     <a:s r="27">
+               <a:s r="250">
+                  <a:s r="252">
+                     <a:s r="251">
                         <a:s>&quot;Total MME&quot;</a:s>
                      </a:s>
                      <a:s>.</a:s>
-                     <a:s r="28">
+                     <a:s r="252">
                         <a:s>value</a:s>
                      </a:s>
                   </a:s>
-                  <a:s r="29"> >= 90</a:s>
+                  <a:s r="253"> >= 90</a:s>
                </a:s>
             </a:s>
          </annotation>
-         <expression localId="30" locator="33:21-33:43" xsi:type="GreaterOrEqual">
-            <operand localId="28" locator="33:21-33:37" path="value" xsi:type="Property">
-               <source localId="27" locator="33:21-33:31" name="Total MME" xsi:type="ExpressionRef"/>
+         <expression localId="250" locator="33:21-33:43" xsi:type="GreaterOrEqual">
+            <signature localId="257" name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+            <signature localId="258" name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+            <operand localId="252" locator="33:21-33:37" path="value" xsi:type="Property">
+               <source localId="251" locator="33:21-33:31" name="Total MME" xsi:type="ExpressionRef"/>
             </operand>
-            <operand xsi:type="ToDecimal">
-               <operand localId="29" locator="33:42-33:43" valueType="t:Integer" value="90" xsi:type="Literal"/>
+            <operand localId="255" xsi:type="ToDecimal">
+               <signature localId="256" name="t:Integer" xsi:type="NamedTypeSpecifier"/>
+               <operand localId="253" locator="33:42-33:43" valueType="t:Integer" value="90" xsi:type="Literal"/>
             </operand>
          </expression>
       </def>
-      <def localId="36" locator="35:1-35:50" name="Consider Tapering" context="Patient" accessLevel="Public">
+      <def localId="260" locator="35:1-35:50" name="Consider Tapering" context="Patient" accessLevel="Public">
          <annotation xsi:type="a:Annotation">
-            <a:s r="36">
+            <a:s r="260">
                <a:s>define &quot;Consider Tapering&quot;: </a:s>
-               <a:s r="35">
-                  <a:s r="33">
-                     <a:s r="32">
+               <a:s r="261">
+                  <a:s r="263">
+                     <a:s r="262">
                         <a:s>&quot;Total MME&quot;</a:s>
                      </a:s>
                      <a:s>.</a:s>
-                     <a:s r="33">
+                     <a:s r="263">
                         <a:s>value</a:s>
                      </a:s>
                   </a:s>
-                  <a:s r="34"> &lt; 90</a:s>
+                  <a:s r="264"> &lt; 90</a:s>
                </a:s>
             </a:s>
          </annotation>
-         <expression localId="35" locator="35:29-35:50" xsi:type="Less">
-            <operand localId="33" locator="35:29-35:45" path="value" xsi:type="Property">
-               <source localId="32" locator="35:29-35:39" name="Total MME" xsi:type="ExpressionRef"/>
+         <expression localId="261" locator="35:29-35:50" xsi:type="Less">
+            <signature localId="268" name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+            <signature localId="269" name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+            <operand localId="263" locator="35:29-35:45" path="value" xsi:type="Property">
+               <source localId="262" locator="35:29-35:39" name="Total MME" xsi:type="ExpressionRef"/>
             </operand>
-            <operand xsi:type="ToDecimal">
-               <operand localId="34" locator="35:49-35:50" valueType="t:Integer" value="90" xsi:type="Literal"/>
+            <operand localId="266" xsi:type="ToDecimal">
+               <signature localId="267" name="t:Integer" xsi:type="NamedTypeSpecifier"/>
+               <operand localId="264" locator="35:49-35:50" valueType="t:Integer" value="90" xsi:type="Literal"/>
             </operand>
          </expression>
       </def>
-      <def localId="41" locator="37:1-40:11" name="Get Indicator" context="Patient" accessLevel="Public">
+      <def localId="271" locator="37:1-40:11" name="Get Indicator" context="Patient" accessLevel="Public">
          <annotation xsi:type="a:Annotation">
-            <a:s r="41">
+            <a:s r="271">
                <a:s>define &quot;Get Indicator&quot;:
   </a:s>
-               <a:s r="40">
+               <a:s r="272">
                   <a:s>if </a:s>
-                  <a:s r="37">
+                  <a:s r="273">
                      <a:s>&quot;Inclusion Criteria&quot;</a:s>
                   </a:s>
                   <a:s>
     then </a:s>
-                  <a:s r="38">
+                  <a:s r="274">
                      <a:s>'warning'</a:s>
                   </a:s>
-                  <a:s r="39">
+                  <a:s r="275">
   else null</a:s>
                </a:s>
             </a:s>
          </annotation>
-         <expression localId="40" locator="38:3-40:11" xsi:type="If">
-            <condition localId="37" locator="38:6-38:25" name="Inclusion Criteria" xsi:type="ExpressionRef"/>
-            <then localId="38" locator="39:10-39:18" valueType="t:String" value="warning" xsi:type="Literal"/>
-            <else asType="t:String" xsi:type="As">
-               <operand localId="39" locator="40:8-40:11" xsi:type="Null"/>
+         <expression localId="272" locator="38:3-40:11" xsi:type="If">
+            <condition localId="273" locator="38:6-38:25" name="Inclusion Criteria" xsi:type="ExpressionRef"/>
+            <then localId="274" locator="39:10-39:18" valueType="t:String" value="warning" xsi:type="Literal"/>
+            <else localId="276" asType="t:String" xsi:type="As">
+               <operand localId="275" locator="40:8-40:11" xsi:type="Null"/>
             </else>
          </expression>
       </def>
-      <def localId="52" locator="42:1-50:11" name="Get Summary" context="Patient" accessLevel="Public">
+      <def localId="278" locator="42:1-50:11" name="Get Summary" context="Patient" accessLevel="Public">
          <annotation xsi:type="a:Annotation">
-            <a:s r="52">
+            <a:s r="278">
                <a:s>define &quot;Get Summary&quot;:
   </a:s>
-               <a:s r="51">
+               <a:s r="279">
                   <a:s>if </a:s>
-                  <a:s r="42">
+                  <a:s r="280">
                      <a:s>&quot;Inclusion Criteria&quot;</a:s>
                   </a:s>
                   <a:s>
     then
       </a:s>
-                  <a:s r="49">
-                     <a:s r="43">
+                  <a:s r="290">
+                     <a:s r="282">
                         <a:s>'High risk for opioid overdose - '</a:s>
                      </a:s>
                      <a:s>
         + </a:s>
-                     <a:s r="48">
+                     <a:s r="283">
                         <a:s>case </a:s>
-                        <a:s r="46">
+                        <a:s r="284">
                            <a:s>when </a:s>
-                           <a:s r="44">
+                           <a:s r="285">
                               <a:s>&quot;Taper Now&quot;</a:s>
                            </a:s>
                            <a:s>
            then </a:s>
-                           <a:s r="45">
+                           <a:s r="286">
                               <a:s>'taper now'</a:s>
                            </a:s>
                         </a:s>
                         <a:s>
            else </a:s>
-                        <a:s r="47">
+                        <a:s r="287">
                            <a:s>'consider tapering'</a:s>
                         </a:s>
                         <a:s>
          end</a:s>
                      </a:s>
                   </a:s>
-                  <a:s r="50">
+                  <a:s r="291">
   else null</a:s>
                </a:s>
             </a:s>
          </annotation>
-         <expression localId="51" locator="43:3-50:11" xsi:type="If">
-            <condition localId="42" locator="43:6-43:25" name="Inclusion Criteria" xsi:type="ExpressionRef"/>
-            <then localId="49" locator="45:7-49:12" xsi:type="Concatenate">
-               <operand localId="43" locator="45:7-45:40" valueType="t:String" value="High risk for opioid overdose - " xsi:type="Literal"/>
-               <operand localId="48" locator="46:11-49:12" xsi:type="Case">
-                  <caseItem localId="46" locator="46:16-47:27">
-                     <when localId="44" locator="46:21-46:31" name="Taper Now" xsi:type="ExpressionRef"/>
-                     <then localId="45" locator="47:17-47:27" valueType="t:String" value="taper now" xsi:type="Literal"/>
+         <expression localId="279" locator="43:3-50:11" xsi:type="If">
+            <condition localId="280" locator="43:6-43:25" name="Inclusion Criteria" xsi:type="ExpressionRef"/>
+            <then localId="290" locator="45:7-49:12" xsi:type="Concatenate">
+               <operand localId="282" locator="45:7-45:40" valueType="t:String" value="High risk for opioid overdose - " xsi:type="Literal"/>
+               <operand localId="283" locator="46:11-49:12" xsi:type="Case">
+                  <caseItem localId="284" locator="46:16-47:27">
+                     <when localId="285" locator="46:21-46:31" name="Taper Now" xsi:type="ExpressionRef"/>
+                     <then localId="286" locator="47:17-47:27" valueType="t:String" value="taper now" xsi:type="Literal"/>
                   </caseItem>
-                  <else localId="47" locator="48:17-48:35" valueType="t:String" value="consider tapering" xsi:type="Literal"/>
+                  <else localId="287" locator="48:17-48:35" valueType="t:String" value="consider tapering" xsi:type="Literal"/>
                </operand>
             </then>
-            <else asType="t:String" xsi:type="As">
-               <operand localId="50" locator="50:8-50:11" xsi:type="Null"/>
+            <else localId="292" asType="t:String" xsi:type="As">
+               <operand localId="291" locator="50:8-50:11" xsi:type="Null"/>
             </else>
          </expression>
       </def>
-      <def localId="62" locator="52:1-55:11" name="Get Detail" context="Patient" accessLevel="Public">
+      <def localId="294" locator="52:1-55:11" name="Get Detail" context="Patient" accessLevel="Public">
          <annotation xsi:type="a:Annotation">
-            <a:s r="62">
+            <a:s r="294">
                <a:s>define &quot;Get Detail&quot;:
   </a:s>
-               <a:s r="61">
+               <a:s r="295">
                   <a:s>if </a:s>
-                  <a:s r="53">
+                  <a:s r="296">
                      <a:s>&quot;Inclusion Criteria&quot;</a:s>
                   </a:s>
                   <a:s>
     then</a:s>
-                  <a:s r="59">
-                     <a:s r="57">
-                        <a:s r="54">
+                  <a:s r="312">
+                     <a:s r="308">
+                        <a:s r="299">
                            <a:s>'Total morphine milligram equivalent (MME) is '</a:s>
                         </a:s>
                         <a:s> + </a:s>
-                        <a:s r="56">
+                        <a:s r="304">
                            <a:s>ToString(</a:s>
-                           <a:s r="55">
+                           <a:s r="300">
                               <a:s>&quot;Total MME&quot;</a:s>
                            </a:s>
                            <a:s>)</a:s>
                         </a:s>
                      </a:s>
                      <a:s> + </a:s>
-                     <a:s r="58">
+                     <a:s r="309">
                         <a:s>'. Taper to less than 50.'</a:s>
                      </a:s>
                   </a:s>
-                  <a:s r="60">
+                  <a:s r="313">
   else null</a:s>
                </a:s>
             </a:s>
          </annotation>
-         <expression localId="61" locator="53:3-55:11" xsi:type="If">
-            <condition localId="53" locator="53:6-53:25" name="Inclusion Criteria" xsi:type="ExpressionRef"/>
-            <then localId="59" locator="54:9-54:108" xsi:type="Concatenate">
-               <operand localId="57" locator="54:9-54:79" xsi:type="Concatenate">
-                  <operand localId="54" locator="54:9-54:55" valueType="t:String" value="Total morphine milligram equivalent (MME) is " xsi:type="Literal"/>
-                  <operand localId="56" locator="54:59-54:79" xsi:type="ToString">
-                     <operand localId="55" locator="54:68-54:78" name="Total MME" xsi:type="ExpressionRef"/>
+         <expression localId="295" locator="53:3-55:11" xsi:type="If">
+            <condition localId="296" locator="53:6-53:25" name="Inclusion Criteria" xsi:type="ExpressionRef"/>
+            <then localId="312" locator="54:9-54:108" xsi:type="Concatenate">
+               <operand localId="308" locator="54:9-54:79" xsi:type="Concatenate">
+                  <operand localId="299" locator="54:9-54:55" valueType="t:String" value="Total morphine milligram equivalent (MME) is " xsi:type="Literal"/>
+                  <operand localId="304" locator="54:59-54:79" xsi:type="ToString">
+                     <signature localId="305" name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                     <operand localId="300" locator="54:68-54:78" name="Total MME" xsi:type="ExpressionRef"/>
                   </operand>
                </operand>
-               <operand localId="58" locator="54:83-54:108" valueType="t:String" value=". Taper to less than 50." xsi:type="Literal"/>
+               <operand localId="309" locator="54:83-54:108" valueType="t:String" value=". Taper to less than 50." xsi:type="Literal"/>
             </then>
-            <else asType="t:String" xsi:type="As">
-               <operand localId="60" locator="55:8-55:11" xsi:type="Null"/>
+            <else localId="314" asType="t:String" xsi:type="As">
+               <operand localId="313" locator="55:8-55:11" xsi:type="Null"/>
             </else>
          </expression>
       </def>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="03eadfd0-d275-4ce8-b733-467566ff2996"/>
+  <id value="3b59b7f2-6f81-49ba-9c0b-408e90281140"/>
   <meta>
-    <lastUpdated value="2024-11-18T18:13:28.336+00:00"/>
+    <lastUpdated value="2025-03-04T15:47:27.965+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,7 +15,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet opioids-with-ambulatory-abuse-potential</b>
+              <b>ValueSet opioids-with-ambulatory-abuse-potential</b>
             </p>
             <p>This value set expansion contains 1,177 concepts.</p>
             <table class="codes">
@@ -8313,7 +8313,7 @@
         <title value="Opioids with Ambulatory Abuse Potential"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-11-18T18:13:28+00:00"/>
+        <date value="2025-03-04T15:46:21+00:00"/>
         <publisher value="HL7 International - Clinical Decision Support WG"/>
         <contact>
           <name value="HL7 International - Clinical Decision Support WG"/>

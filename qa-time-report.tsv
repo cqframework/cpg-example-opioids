@@ -1,8 +1,8 @@
-Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-cqframework.cpg-example-opioids.json	4702	-	0	0	0	0	0	0	5	195	0	0	0	0	0	0	0	0	0	0	119	79	0	0	0	4	0	1
-fsh-generated/resources/ActivityDefinition-opioidcds-riskassessment-request.json	2117	21	0	0	0	0	0	0	0	24	0	0	0	0	0	0	0	0	0	0	29	21	0	0	0	0	0	0
-fsh-generated/resources/Library-OMTKLogic.json	3177	16	0	0	0	0	0	0	0	18	0	0	0	0	0	0	0	0	0	0	829	117	0	0	0	19	0	0
-fsh-generated/resources/Library-OpioidCDSR4Common.json	5485	17	0	0	0	0	0	0	1	175	0	0	0	0	0	0	0	1	0	0	1061	160	0	0	0	29	0	0
-fsh-generated/resources/Library-OpioidCDSR4Recommendation05.json	2511	21	1	0	0	0	0	0	1	4	0	0	0	0	0	0	0	0	0	0	86	24	0	0	0	2	0	0
-fsh-generated/resources/PlanDefinition-opioidcds-r4-recommendation-05.json	6104	23	0	0	0	0	0	0	0	25	0	0	0	0	0	0	0	0	0	0	41	27	0	0	0	2	0	0
-fsh-generated/resources/ValueSet-opioids-with-ambulatory-abuse-potential.json	265218	75	0	0	0	0	0	0	13	147	0	0	0	0	0	0	0	3	0	0	1425	8378	0	1	0	35	0	4
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-cqframework.cpg-example-opioids.json	4680	-	0	0	0	0	0	0	3	241	0	0	0	0	0	0	0	0	0	0	81	66	0	0	1	7	0	1
+fsh-generated/resources/ActivityDefinition-opioidcds-riskassessment-request.json	2117	39	0	0	1	0	0	0	0	23	0	0	0	0	0	0	0	0	0	0	19	24	0	0	0	2	0	0
+fsh-generated/resources/Library-OMTKLogic.json	3177	34	0	0	0	0	0	0	0	22	0	0	0	0	0	0	0	0	0	0	406	55	0	0	0	25	0	0
+fsh-generated/resources/Library-OpioidCDSR4Common.json	5485	27	0	0	0	0	0	0	1	248	0	0	0	0	0	0	0	1	0	0	567	74	0	0	0	38	0	0
+fsh-generated/resources/Library-OpioidCDSR4Recommendation05.json	2511	22	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	50	17	0	0	0	3	0	0
+fsh-generated/resources/PlanDefinition-opioidcds-r4-recommendation-05.json	6104	22	0	0	1	0	0	0	1	49	0	0	0	0	0	0	0	0	0	0	29	27	0	0	0	2	0	0
+fsh-generated/resources/ValueSet-opioids-with-ambulatory-abuse-potential.json	265218	68	0	0	0	0	0	0	19	238	0	0	0	0	0	0	0	3	0	0	748	5150	0	2	0	41	0	4

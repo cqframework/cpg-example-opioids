@@ -1,54 +1,54 @@
 CPGOpioidPrescribingGuidelineExamples : Validation Results
 =========================================
 
-err = 5, warn = 6, info = 2
+err = 5, warn = 10, info = 1
 $--
 Generated $--. FHIR version $-- for cqframework.cpg-example-opioids#$-- (canonical = http://cqframework.org/cpg-example-opioids)
- Build Errors : 40 / 4 / 0
+ Build Errors : 40 / 5 / 0
  /github/workspace/fsh-generated/resources/ActivityDefinition-opioidcds-riskassessment-request : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-cqframework.cpg-example-opioids : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Library-OMTKLogic : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Library-OpioidCDSR4Common : 0 / 19 / 1
+ /github/workspace/fsh-generated/resources/Library-OpioidCDSR4Common : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/Library-OpioidCDSR4Recommendation05 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/PlanDefinition-opioidcds-r4-recommendation-05 : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-opioids-with-ambulatory-abuse-potential : 2 / 0 / 3
+ /github/workspace/fsh-generated/resources/ValueSet-opioids-with-ambulatory-abuse-potential : 2 / 2 / 2
 </table>
 == n/a ==
 ERROR: /github/workspace/output/ActivityDefinition-opioidcds-riskassessment-request-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ActivityDefinition-opioidcds-riskassessment-request.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ActivityDefinition-opioidcds-riskassessment-request.html#/html/body/div/div/div/p/span/a at Line 274, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ActivityDefinition-opioidcds-riskassessment-request.json.html#/html/body/div/div/div/p/span/a at Line 324, column 132: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ActivityDefinition-opioidcds-riskassessment-request.ttl.html#/html/body/div/div/div/p/span/a at Line 308, column 132: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ActivityDefinition-opioidcds-riskassessment-request.ttl.html#/html/body/div/div/div/p/span/a at Line 309, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ActivityDefinition-opioidcds-riskassessment-request.xml.html#/html/body/div/div/div/p/span/a at Line 312, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-OMTKLogic-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-OMTKLogic.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-OMTKLogic.html#/html/body/div/div/div/p/span/a at Line 595, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-OMTKLogic.json.html#/html/body/div/div/div/p/span/a at Line 360, column 132: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-OMTKLogic.ttl.html#/html/body/div/div/div/p/span/a at Line 335, column 132: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-OMTKLogic.ttl.html#/html/body/div/div/div/p/span/a at Line 336, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-OMTKLogic.xml.html#/html/body/div/div/div/p/span/a at Line 671, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-OpioidCDSR4Common-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-OpioidCDSR4Common.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-OpioidCDSR4Common.html#/html/body/div/div/div/p/span/a at Line 518, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-OpioidCDSR4Common.json.html#/html/body/div/div/div/p/span/a at Line 600, column 132: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-OpioidCDSR4Common.ttl.html#/html/body/div/div/div/p/span/a at Line 552, column 132: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-OpioidCDSR4Common.ttl.html#/html/body/div/div/div/p/span/a at Line 553, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-OpioidCDSR4Common.xml.html#/html/body/div/div/div/p/span/a at Line 832, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-OpioidCDSR4Recommendation05-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-OpioidCDSR4Recommendation05.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-OpioidCDSR4Recommendation05.html#/html/body/div/div/div/p/span/a at Line 321, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-OpioidCDSR4Recommendation05.json.html#/html/body/div/div/div/p/span/a at Line 393, column 132: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Library-OpioidCDSR4Recommendation05.ttl.html#/html/body/div/div/div/p/span/a at Line 367, column 132: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Library-OpioidCDSR4Recommendation05.ttl.html#/html/body/div/div/div/p/span/a at Line 368, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Library-OpioidCDSR4Recommendation05.xml.html#/html/body/div/div/div/p/span/a at Line 441, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/PlanDefinition-opioidcds-r4-recommendation-05-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/PlanDefinition-opioidcds-r4-recommendation-05.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/PlanDefinition-opioidcds-r4-recommendation-05.html#/html/body/div/div/div/p/span/a at Line 274, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/PlanDefinition-opioidcds-r4-recommendation-05.json.html#/html/body/div/div/div/p/span/a at Line 445, column 132: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/PlanDefinition-opioidcds-r4-recommendation-05.ttl.html#/html/body/div/div/div/p/span/a at Line 380, column 132: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/PlanDefinition-opioidcds-r4-recommendation-05.ttl.html#/html/body/div/div/div/p/span/a at Line 381, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/PlanDefinition-opioidcds-r4-recommendation-05.xml.html#/html/body/div/div/div/p/span/a at Line 423, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-opioids-with-ambulatory-abuse-potential-testing.html#/html/body/div/div/div/p/span/a at Line 231, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-opioids-with-ambulatory-abuse-potential.change.history.html#/html/body/div/div/div/p/span/a at Line 200, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-opioids-with-ambulatory-abuse-potential.html#/html/body/div/div/div/p/span/a at Line 313, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-opioids-with-ambulatory-abuse-potential.json.html#/html/body/div/div/div/p/span/a at Line 7689, column 132: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-opioids-with-ambulatory-abuse-potential.ttl.html#/html/body/div/div/div/p/span/a at Line 5181, column 132: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-opioids-with-ambulatory-abuse-potential.ttl.html#/html/body/div/div/div/p/span/a at Line 5198, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-opioids-with-ambulatory-abuse-potential.xml.html#/html/body/div/div/div/p/span/a at Line 8196, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/span/a at Line 265, column 132: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 248, column 8: The link 'Library-omtklogic.html' for "OMTKLogic" cannot be resolved
@@ -56,21 +56,24 @@ ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/span/a at Li
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/span/a at Line 156, column 132: The link 'license.html' for "License" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
 == fsh-generated/resources/ActivityDefinition-opioidcds-riskassessment-request.json ==
 ERROR: ActivityDefinition/opioidcds-riskassessment-request: ActivityDefinition.code.coding[0].code: Unknown code '454281000124100' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240801'
 == fsh-generated/resources/ImplementationGuide-cqframework.cpg-example-opioids.json ==
 == fsh-generated/resources/Library-OMTKLogic.json ==
 == fsh-generated/resources/Library-OpioidCDSR4Common.json ==
-WARNING: /github/workspace/./input/cql/OpioidCDSR4Common.cql: The function FHIRHelpers.ToString has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
+WARNING: /github/workspace/./input/cql/OpioidCDSR4Common.cql: An operand identifier [coding] is hiding another identifier of the same name.
 WARNING: OpioidCDSR4Common: Could not resolve membership operator for terminology target of the retrieve.
+WARNING: Library/OpioidCDSR4Common: Library.relatedArtifact[3].resource: There are multiple different potential matches for the url 'http://terminology.hl7.org/CodeSystem/medicationrequest-category'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '1.0.0', found versions: 1.0.0, 4.0.1
 == fsh-generated/resources/Library-OpioidCDSR4Recommendation05.json ==
 == fsh-generated/resources/PlanDefinition-opioidcds-r4-recommendation-05.json ==
 ERROR: PlanDefinition/opioidcds-r4-recommendation-05: PlanDefinition.action[0].documentation[0].document: The extension http://hl7.org/fhir/StructureDefinition/cqf-strengthOfRecommendation is not allowed to be used at this point (allowed = e:PlanDefinition.action; this element is [Attachment, PlanDefinition.action.documentation.document, RelatedArtifact.document])
 ERROR: PlanDefinition/opioidcds-r4-recommendation-05: PlanDefinition.action[0].documentation[0].document: The extension http://hl7.org/fhir/StructureDefinition/cqf-qualityOfEvidence is not allowed to be used at this point (allowed = e:PlanDefinition.action; this element is [Attachment, PlanDefinition.action.documentation.document, RelatedArtifact.document])
 == fsh-generated/resources/ValueSet-opioids-with-ambulatory-abuse-potential.json ==
-INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[4].value.ofType(code): Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft
-INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[5].value.ofType(code): Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/knowledge-representation-level|2.0.0-draft
+WARNING: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[4].value.ofType(code): ValueSet 'http://hl7.org/fhir/ValueSet/knowledge-representation-level' not found
+WARNING: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[5].value.ofType(code): ValueSet 'http://hl7.org/fhir/ValueSet/knowledge-representation-level' not found
+INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[6]: The extension http://hl7.org/fhir/StructureDefinition/valueset-author|5.2.0 is deprecated with the note Replaced by the extension [[[http://hl7.org/fhir/StructureDefinition/artifact-author]]] prior to R5, and the element [[[ValueSet.author]]] in R5
 ERROR: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[8]: The extension http://hl7.org/fhir/StructureDefinition/artifact-usageWarning could not be found so is not allowed here
 ERROR: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[8].url: URL value 'http://hl7.org/fhir/StructureDefinition/artifact-usageWarning' does not resolve
